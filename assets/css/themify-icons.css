@@ -23,6 +23,13 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
+.korean-font{
+
+	font-family: 'Noto Sans KR', sans-serif;
+
+}
+
 .ti-wand:before {
 	content: "\e600";
 }
