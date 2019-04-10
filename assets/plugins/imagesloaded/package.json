@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "imagesloaded",
+        "scope": null,
+        "escapedName": "imagesloaded",
+        "name": "imagesloaded",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Chata/assets/plugins"
+    ]
+  ],
+  "_from": "imagesloaded@latest",
+  "_id": "imagesloaded@4.1.2",
+  "_inCache": true,
+  "_location": "/imagesloaded",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/imagesloaded-4.1.2.tgz_1493910529698_0.2538759799208492"
+  },
+  "_npmUser": {
+    "name": "desandro",
+    "email": "desandrocodes@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "imagesloaded",
+    "scope": null,
+    "escapedName": "imagesloaded",
+    "name": "imagesloaded",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/imagesloaded/-/imagesloaded-4.1.2.tgz",
+  "_shasum": "9d1e094112ad3fe6445289c470d975627819df0d",
+  "_shrinkwrap": null,
+  "_spec": "imagesloaded",
+  "_where": "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Chata/assets/plugins",
+  "author": {
+    "name": "David DeSandro"
+  },
+  "bugs": {
+    "url": "https://github.com/desandro/imagesloaded/issues"
+  },
+  "dependencies": {
+    "ev-emitter": "~1.0.0"
+  },
+  "description": "JavaScript is all like _You images done yet or what?_",
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "cheerio": "^0.19.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-json-lint": "^0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.7",
+    "highlight.js": "^8.9.1",
+    "marked": "^0.3.5",
+    "minimist": "^1.2.0",
+    "requirejs": "^2.1.20",
+    "through2": "^2.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "shasum": "9d1e094112ad3fe6445289c470d975627819df0d",
+    "tarball": "https://registry.npmjs.org/imagesloaded/-/imagesloaded-4.1.2.tgz"
+  },
+  "gitHead": "d5379d360beb0a051674fd3d9398fed3f6619410",
+  "homepage": "https://github.com/desandro/imagesloaded",
+  "keywords": [
+    "images",
+    "loaded",
+    "ui",
+    "dom",
+    "jquery-plugin"
+  ],
+  "license": "MIT",
+  "main": "imagesloaded.js",
+  "maintainers": [
+    {
+      "name": "desandro",
+      "email": "desandrocodes@gmail.com"
+    }
+  ],
+  "name": "imagesloaded",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/desandro/imagesloaded.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "4.1.2"
+}

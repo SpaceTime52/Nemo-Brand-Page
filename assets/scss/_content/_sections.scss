@@ -1,0 +1,195 @@
+/* 4.7 Sections
+----------------------------------------------------------*/
+
+section, .section {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    &.cover {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &.section-lg {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+
+        @media #{$screen-xl} {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+
+    &.section-xl {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        @media #{$screen-xl} {
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+        }
+    }
+
+    &.section-sm {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+
+        @media #{$screen-xl} {
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
+        }
+    }
+
+    &.protrude {
+        z-index: 2;
+    }
+}
+
+/* Section Double */
+.section-double {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    > .row {
+        height: 35vw;
+        @include align-items(center);
+
+        @media #{$screen-xl} {
+            height: 40vw;
+        }
+
+        @media #{$screen-lg} {
+            height: 60vh;
+        }
+
+        @media #{$screen-sm} {
+            height: auto;
+        }
+
+        > .image {
+            position: relative;
+            height: 100%;
+
+            @media #{$screen-sm} {
+                height: 60vh;
+            }
+
+            &.right > .bg-image {
+                background-position: left center;
+            }
+
+            &.left > .bg-image {
+                background-position: right center;
+            }
+
+            .btn-play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include translate3d(-50%,-50%,0);
+            }
+        }
+
+        > .content {
+            padding: 4rem 8%;
+        }
+    }
+}
+
+/* Section BG Edge */
+.section-bg-edge {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+
+    .image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        @media #{$screen-sm} {
+            left: 0;
+            right: 0;
+            @include opacity(0.25);
+        }
+
+        &.right { 
+            text-align: right; 
+            right: 0;
+
+            .bg-image {
+                background-position: center left;
+            }
+        }
+        &.left { 
+            text-align: left; 
+            left: 0;
+
+            .bg-image {
+                background-position: center right;
+            }
+        }
+        &.bottom {
+            .bg-image {
+                background-position-y: top !important;
+            }
+        }
+    }
+
+    .container > div[class*="col-"] {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    &.section-sm {
+        .container > div[class*="col-"] {
+            padding-top: 4.5rem;
+            padding-bottom: 4.5rem;
+        }
+    }
+
+    &.section-lg {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .container > div[class*="col-"] {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    }
+}
+
+/* Section Object */
+.section-object {
+    .bg-image-holder:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: ' ';
+        background: linear-gradient(to top, rgba(#000,0.8), rgba(#000,0));
+    }
+
+    > .object-single {
+        position: relative;
+        padding-top: 20vw;
+        padding-bottom: 4rem;
+
+        @media #{$screen-md} {
+            padding-top: 40vw;
+        }
+
+        @media #{$screen-xs} {
+            padding-top: 300px;
+        }
+    }
+}
+
+
+
+

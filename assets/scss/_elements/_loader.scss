@@ -1,0 +1,66 @@
+/* 6.9 Loaders
+----------------------------------------------------------*/
+
+.animsition-overlay-slide {
+    z-index: 10000;
+    background-color: #fff;
+    @include box-shadow(0 0 90px 0 rgba(#000,0.07));
+}
+
+.dark-overlay .animsition-overlay-slide {
+    background-color: shade($color-dark,10%);
+}
+
+.page-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+    z-index: 10001;
+
+    .loader{
+        position: relative;
+    }
+}
+
+/* Loader */
+
+.loader { 
+    @include animation(loaderRotate 1.4s linear infinite);
+
+    .circle {
+        stroke: $color-primary;
+        stroke-dasharray: 96;
+        stroke-dashoffset: 0;
+        @include transform-origin(center);
+        @include animation(loaderTurn 1.4s ease-in-out infinite);
+    }
+
+    &.loader-white .circle {
+        stroke: #fff;
+    }
+}
+
+@include keyframes(loaderRotate) {
+    0% {
+        @include rotate(0deg);
+    }
+    100% {
+        @include rotate(270deg);
+    }
+}
+
+@include keyframes(loaderTurn) {
+    0% {
+        stroke-dashoffset: 96;
+    }
+    50% {
+        stroke-dashoffset: 23;
+        @include rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 96;
+        @include rotate(450deg);
+    }
+};

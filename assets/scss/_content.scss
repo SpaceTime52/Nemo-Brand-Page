@@ -1,0 +1,48 @@
+/* ---------------------------------------------------------------------------- */
+/* --- 4. CONTENT
+/* ----------------------------------------------------------------------------- */
+
+#content {
+	position: relative;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.header-vertical {
+    #content, #footer {
+        margin-left: 330px;
+
+        @media #{$screen-lg} {
+            margin-left: 0;
+        }
+    }
+    #content {
+        @media #{$screen-lg} {
+            padding-top: $navigation-mobile-height;
+        }
+    }
+}
+
+.header-horizontal #content {
+    padding-top: $header-horizontal-height;
+
+    .section:first-child {
+        padding-top: calc(7rem + $header-horizontal-height);
+    }
+}
+
+.page-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@import "_content/blog";
+@import "_content/features";
+@import "_content/objects";
+@import "_content/other";
+@import "_content/page-title";
+@import "_content/plan";
+@import "_content/sections";
+
+

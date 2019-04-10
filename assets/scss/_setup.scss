@@ -1,0 +1,127 @@
+/* ----------------------------------------------------------------------------- */
+/* --- 1. SETUP
+/* ----------------------------------------------------------------------------- */
+
+html {
+	font-size: 14px;
+
+	@media #{$screen-xs} {
+		font-size: 13px;
+	}
+}
+
+body { 
+	position: relative;
+	color: $color-global;
+	font-family: $font-primary;
+	font-weight: 300;
+	line-height: 1.8;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+    &.panel-objects-open {
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+button, input {
+    font-family: inherit;
+}
+
+a {
+	color: $color-primary;
+	@include transition(all 0.2s ease-in-out);
+}
+
+a:hover, a:focus { text-decoration: none; color: tint($color-primary,10%); }
+
+a.link-inherit {
+    color: inherit;
+
+    &:hover, &:focus {
+        color: $color-primary;
+    }
+}
+
+a.link-reset {
+    color: inherit;
+
+    &:hover, &:focus {
+        color: inherit;
+    }
+}
+
+
+textarea:focus, input:focus, a:focus, a:visited, *:focus { outline: none; }
+
+iframe { border: none; }
+
+img { max-width: 100%; height: auto; -webkit-backface-visibility: hidden;}
+
+.page-content {
+    @include pie-clearfix;
+
+    > .page-main, >.page-sidebar {
+        &.left {
+            float: left;
+
+            @media #{$screen-sm} {
+                float: none;
+            }
+        }
+        &.right {
+            float: right;
+
+            @media #{$screen-sm} {
+                float: none;
+            }
+        }
+    }
+
+    > .page-main {
+        width: 70%;
+
+        @media #{$screen-sm} {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+    > .page-sidebar {
+        width: 24%;
+
+        @media #{$screen-sm} {
+            width: 100%;
+        }
+    }
+}
+
+.container-custom {
+    margin-left: 12vw;
+    margin-right: 12vw;
+
+    @media #{$screen-xl} {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+}
+
+.container-md {
+    max-width: 780px;
+}
+
+
+::selection {
+    background: $color-primary;
+    color: #fff;
+}
+*::-moz-selection {
+    background: $color-primary;
+    color: #fff;
+}
+
+#body-wrapper {
+    position: relative;
+    z-index: 0;
+}

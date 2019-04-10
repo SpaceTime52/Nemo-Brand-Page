@@ -1,0 +1,183 @@
+/* 6.13 Other
+----------------------------------------------------------*/
+
+/* Body Overlay */
+
+#body-overlay {   
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgba(#000,0.5);
+    z-index: 899;
+    content: ' ';
+    z-index: 925;
+    display: none;
+} 
+
+/* Separator */
+
+hr {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+    border-color: $color-line;
+
+    @media #{$screen-sm} {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &.hr-md {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &.hr-sm {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &.hr-xs {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &.hr-primary {
+        width: 50px;
+        border-color: $color-primary;
+        display: inline-block;
+        border-width: 2px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.dark hr {
+    border-color: $color-line-light;
+}
+
+/* Shapes */
+
+.shape {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+
+    &.circle {
+        @include border-radius(50%);
+    }
+
+    &.square {
+        @include border-radius(5px);
+    }
+}
+
+/* Close */
+
+.close {
+    color: inherit;
+    text-shadow: none;
+    @include opacity(0.6);
+    font-size: 14px;
+    @include transition-primary;
+
+    &:after {
+        font-family: themify;
+        content: "\e646";
+    }
+
+    &:hover, &:focus, &:active, &:focus:active {
+        outline: none;
+        color: inherit;
+        @include opacity(1);
+    }
+}
+.dark .close,
+.close.dark {
+    color: #fff;
+}
+
+/* Go back */
+
+.stick-to-content {
+    @media #{$screen-md} {
+        position: relative !important;
+        top: 0 !important;
+    }
+}
+
+/* Images */
+
+.img-thumbnail, .rounded {
+    @include border-radius(0.4rem);
+}
+
+/* Fullscreen toggle */
+
+.fullscreen-toggle {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    width: 26px;
+    height: 26px;
+    z-index: 100;
+    color: #fff;
+    cursor: pointer;
+
+    > span {
+        position: absolute;
+        display: block;
+        width: 11px;
+        height: 11px;
+        background-size: 100% 100%;
+        @include transition-primary;
+
+        &.arrow-tl {
+            top: 0;
+            left: 0;
+            background-image: url('../../img/svg/arrow-tl.svg');
+        }
+
+        &.arrow-tr {
+            top: 0;
+            right: 0;
+            background-image: url('../../img/svg/arrow-tr.svg');
+        }
+
+        &.arrow-br {
+            bottom: 0;
+            right: 0;
+            background-image: url('../../img/svg/arrow-br.svg');
+        }
+
+        &.arrow-bl {
+            bottom: 0;
+            left: 0;
+            background-image: url('../../img/svg/arrow-bl.svg');
+        }
+    }
+
+    &:hover {
+        .arrow-tl { @include translate(-2px, -2px); }
+        .arrow-tr { @include translate(2px, -2px); }
+        .arrow-br { @include translate(2px, 2px); }
+        .arrow-bl { @include translate(-2px, 2px); }
+    }
+}
+
+/* Actions link */
+
+.action-icon {
+    color: $color-muted;
+    margin: 0 0.1em;
+
+    &:hover, &:focus {
+        color: $color-global;
+    }
+}
+
+/* Figure */
+figure {
+    margin-bottom: 2rem;
+}

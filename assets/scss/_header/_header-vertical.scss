@@ -1,0 +1,190 @@
+/* 3.2 Header Vertical
+----------------------------------------------------------*/
+
+#header.header-vertical {
+    background-color: #fff;
+    width: 330px;
+    height: 100vh;
+    overflow: auto;
+
+    .header-vertical-container {
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 90px;
+    }
+
+    @media #{$screen-lg} {
+        @include transition-primary;
+        @include translateX(-100%);
+        visibility: hidden;
+
+        &.open {
+            @include translateX(0);
+            visibility: visible;
+        }
+    }
+
+    @media #{$screen-lg} {
+        width: calc(100% - 55px);
+    }
+
+    &.dark {
+        color: #fff;
+        background-color: $color-dark;
+    }
+
+    .module-logo {
+        display: block;
+        text-align: center;
+        padding: 8vh 0;
+    }
+
+    .module-nav {
+        position: relative;
+        padding: 0 40px;
+    }
+
+    .module-object {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-top: 1px solid $color-line;
+        cursor: pointer;
+        font-family: $font-secondary;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        padding: 0.75rem 3rem 0.75rem 1rem;
+        width: 100%;
+
+        .object-image {
+            @include border-radius(50%);
+        }
+
+        .object-name {
+            margin-left: 1rem;
+        }
+
+        .object-indicator {
+            position: absolute;
+            top: 1.05rem;
+            right: 1rem;
+            @include opacity(0.3);
+            font-size: 1.1rem;
+            @include transition-primary;
+        }
+
+        &:hover {
+            .object-indicator {
+                @include opacity(0.8);
+            }
+        }
+    }
+
+    &.dark .module-object {
+        border-color: $color-line-light;
+    }
+
+    #nav-toggle {
+        float: left;
+        display: none;
+
+        @media #{$screen-md} {
+            display: block;
+        }
+    }
+}
+
+.nav-main-vertical {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.4rem;
+    @include flex-direction(column);
+
+    > li {
+        > a {
+            padding: 0.5rem 0;
+            display: block;
+            color: $color-muted;
+
+            &.go-back {
+                font-size: 1.1rem;
+
+                > i {
+                    font-size: 140%;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 1rem;
+                }
+            }
+
+            &:hover, &:focus, &.active {
+                color: $color-global;
+            }
+        }
+    }
+
+    &.nav-language > li > a {
+        @include opacity(0.5);
+
+        &.active, &:hover, &:focus {
+            @include opacity(1);
+        }
+    }
+}
+
+#header.header-vertical.dark .nav-main-vertical > li > a {
+    color: $color-muted-light;
+
+    &:hover, &:focus, &.active {
+        color: #fff;
+    }
+}
+
+// Navigation Mobile 
+
+#navigation-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 898;
+    background-color: #fff;
+    height: $navigation-mobile-height;
+    padding: 0 15px;
+    display: none;
+
+    @media #{$screen-lg} {
+        display: block;
+    }
+
+    &.dark {
+        color: #fff;
+        background-color: $color-dark;
+    }
+
+    &.light {
+        @include box-shadow(0 0 10px 0 rgba(#000,0.15));
+    }
+
+    .module {
+        line-height: $navigation-mobile-height;
+        height: $navigation-mobile-height;
+    }
+
+    .module-logo {
+        img {
+            position: relative;
+            top: -0.2rem;
+            max-height: calc(#{$navigation-mobile-height} - 20px);
+        }
+    }
+
+    .module-nav-toggle {
+        float: right;
+
+        .nav-toggle {
+            margin-top: 1rem;
+        }
+    }
+}

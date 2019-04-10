@@ -1,0 +1,112 @@
+/* 6.5 Cards
+----------------------------------------- */
+
+.card {
+    border-color: $color-line;
+    margin-bottom: 1.75rem;
+}
+
+.card-header,
+.card-footer {
+    padding: 1.5rem 1.75rem;
+	background-color: transparent;
+}
+
+.card-subtitle {
+    margin-top: -0.5rem;
+}
+
+.card-block {
+    padding: 1.5rem 1.75rem;
+
+    &:first-child {
+        .icon-circle {
+            margin-top: -30px;
+        }
+    }
+}
+
+.card-image {
+    &:first-child {
+        @include border-radius(0.3rem 0.3rem 0 0);
+        margin-top: -1px;
+    }
+    &:last-child {
+        @include border-radius(0 0 0.3rem 0.3rem);
+        margin-bottom: -1px;
+    }
+}
+
+.card-link {
+    font-weight: 700;
+    font-size: 0.95rem;
+    font-family: $font-secondary;
+
+    &:after {
+        margin-left: 0.7rem;
+        content: "\f105";
+        font-family: FontAwesome;
+        @include opacity(0.5);
+        @include transition-primary;
+        display: inline-block;
+    }
+
+    &:hover, &:focus {
+        color: inherit;
+        &:after {
+            @include translateX(4px);
+            @include opacity(1);
+            color: $color-primary;
+        }
+    }
+}
+
+.card-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: $font-secondary;
+    @include pie-clearfix;
+
+    > li {
+        width: 50%;
+        float: left;
+        overflow: hidden;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-bottom: 0.4rem;
+
+        &:before {
+            margin-right: 0.7rem;
+            content: "\f105";
+            font-family: FontAwesome;
+            @include opacity(0.5);
+        }
+
+        > a {
+            &:hover, &:focus {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.card-icon,
+.card-icon-top,
+.card-icon-bottom {
+    padding: 50px 0;
+    font-size: 56px;
+    text-align: center;
+    color: #fff;
+}
+
+.card-icon-top {
+    @include border-radius(3px 3px 0 0);
+}
+
+.card-icon-bottom {
+    @include border-radius(0 0 3px 3px);
+}

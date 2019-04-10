@@ -1,0 +1,183 @@
+/* 3.1 Header Horizontal
+----------------------------------------------------------*/
+
+#header.header-horizontal {
+    width: 100%;
+    height: $header-horizontal-height;
+    padding-left: 1.5rem;
+    background-color: #fff;
+
+    &.dark {
+        color: #fff;
+        background-color: $color-dark;
+    }
+    
+    .module {
+        line-height: $header-horizontal-height;
+        height: $header-horizontal-height;
+    }
+
+    .module-nav {
+        position: relative;
+        float: left;
+
+        .selector {
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            background-color: $color-primary;
+            @include transition-primary;
+        }
+
+        @media #{$screen-md} {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: $color-dark;
+            height: auto;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            @include transition-primary;
+            visibility: hidden;
+            @include opacity(0);
+
+            &.show {
+                visibility: visible;
+                @include opacity(1);
+            }
+
+            .nav-main-horizontal {
+                @include flex-direction(column);
+            }
+
+            a {
+                line-height: 2rem;
+            }
+
+            .selector {
+                display: none;
+            }
+        } 
+    }
+
+    .module-language {
+        float: right;
+    }
+
+    .module-object {
+        position: relative;
+        float: right;
+        border-left: 1px solid $color-line;
+        cursor: pointer;
+        font-family: $font-secondary;
+        background-color: $color-dark;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        padding: 0 3rem 0 1rem;
+        width: 260px;
+
+        @media #{$screen-xs} {
+            width: auto;
+            padding-right: 1rem;
+        } 
+        
+        .object-image {
+            @include border-radius(50%);
+        }
+
+        .object-name {
+            margin-left: 1rem;
+
+            @media #{$screen-xs} {
+                display: none;
+            } 
+        }
+
+        .object-indicator {
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            @include opacity(0.3);
+            font-size: 1.1rem;
+            @include transition-primary;
+
+            @media #{$screen-xs} {
+                display: none;
+            } 
+        }
+
+        &:hover {
+            .object-indicator {
+                @include opacity(0.8);
+            }
+        }
+    }
+
+    &.dark .module-object {
+        border-color: $color-line-light;
+    }
+
+    .module-nav-toggle {
+        float: left;
+        display: none;
+
+        @media #{$screen-md} {
+            display: block;
+        }
+
+        .nav-toggle {
+            margin-top: 1.3rem;
+        }
+    }
+
+    .module-back {
+        float: left;        
+        margin-right: 1rem;
+
+        .nav-back {
+            position: relative;
+            top: -0.1rem;
+            font-size: 2rem;
+            color: inherit;
+            @include opacity(0.5);
+            width: 2rem;
+            display: block;
+            text-align: center;
+
+            &:hover, &:focus {
+                @include opacity(1);
+            }
+        }
+    }
+}
+
+.nav-main-horizontal {
+    font-family: $font-secondary;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+
+    > li {
+        > a {
+            padding: 0 0.9rem;
+            display: block;
+            color: inherit;
+
+            &:hover, &:focus {
+                color: inherit;
+                @include opacity(0.6);
+            }
+        }
+    }
+
+    &.nav-language > li > a {
+        @include opacity(0.5);
+
+        &.active, &:hover, &:focus {
+            @include opacity(1);
+        }
+    }
+}

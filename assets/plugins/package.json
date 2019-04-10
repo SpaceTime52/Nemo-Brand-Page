@@ -1,0 +1,22 @@
+{
+  "name": "Chata",
+  "description": "Plugins",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "animsition": "^4.0.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "imagesloaded": "^4.1.2",
+    "jquery": "^3.1.1",
+    "jquery-validation": "^1.16.0",
+    "jquery.appear": "^1.0.1",
+    "jquery.localscroll": "^1.4.0",
+    "masonry-layout": "^4.2.0",
+    "photoswipe": "^4.1.1",
+    "slick-carousel": "^1.6.0",
+    "twitter-fetcher": "^17.0.0",
+    "waypoints": "^4.0.1"
+  }
+}

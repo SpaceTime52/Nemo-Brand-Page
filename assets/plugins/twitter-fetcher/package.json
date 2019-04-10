@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "twitter-fetcher",
+        "scope": null,
+        "escapedName": "twitter-fetcher",
+        "name": "twitter-fetcher",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Chata/assets/plugins"
+    ]
+  ],
+  "_from": "twitter-fetcher@latest",
+  "_id": "twitter-fetcher@17.0.0",
+  "_inCache": true,
+  "_location": "/twitter-fetcher",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/twitter-fetcher-17.0.0.tgz_1495166424283_0.859264250844717"
+  },
+  "_npmUser": {
+    "name": "jasonmayes",
+    "email": "hello@jasonmayes.com"
+  },
+  "_npmVersion": "1.4.28",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "twitter-fetcher",
+    "scope": null,
+    "escapedName": "twitter-fetcher",
+    "name": "twitter-fetcher",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/twitter-fetcher/-/twitter-fetcher-17.0.0.tgz",
+  "_shasum": "f8a4b1137f3ccfc99c84e879753042c79f93163a",
+  "_shrinkwrap": null,
+  "_spec": "twitter-fetcher",
+  "_where": "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Chata/assets/plugins",
+  "author": {
+    "name": "Jason Mayes"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonmayes/Twitter-Post-Fetcher/issues"
+  },
+  "dependencies": {},
+  "description": "Fetch your twitter posts without using the new Twitter 1.1 API. Pure JavaScript!",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "f8a4b1137f3ccfc99c84e879753042c79f93163a",
+    "tarball": "https://registry.npmjs.org/twitter-fetcher/-/twitter-fetcher-17.0.0.tgz"
+  },
+  "gitHead": "3e693e17a178011785693a260e101fe56faea2c2",
+  "homepage": "https://github.com/jasonmayes/Twitter-Post-Fetcher",
+  "keywords": [
+    "Twitter",
+    "OAUTH",
+    "JavaScript",
+    "tweets",
+    "api",
+    "widget"
+  ],
+  "main": "js/twitterFetcher_min.js",
+  "maintainers": [
+    {
+      "name": "jasonmayes",
+      "email": "hello@jasonmayes.com"
+    }
+  ],
+  "name": "twitter-fetcher",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonmayes/Twitter-Post-Fetcher.git"
+  },
+  "scripts": {},
+  "version": "17.0.0"
+}

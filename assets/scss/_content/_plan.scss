@@ -1,0 +1,160 @@
+/* 4.6 Plan
+----------------------------------------------------------*/
+
+/* plan Container */
+
+.plan-container {
+    position: relative;
+    display: inline-block;
+    margin: 2rem auto;
+
+    .plan-feature {
+        position: absolute;
+        text-align: left;
+
+        &:hover {
+            z-index: 2;
+        }
+
+        .plan-pointer {
+            position: relative;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            font-size: 1.6rem;
+            text-align: center;
+            display: inline-block;
+            background-color: transparent;
+            border: 2px solid $color-primary;
+            @include border-radius(50%);
+            cursor: pointer;
+
+            &:before,
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                @include border-radius(50%);
+                content: ' ';
+            }
+
+            &:before {
+                background-color: #fff;
+                @include opacity(0);
+                @include scale(0.9);
+                visibility: hidden;
+                @include transition-primary;
+                z-index: 2;
+            }
+
+            &:after {
+                background-color: $color-primary;
+                @include animation(planPointerAnimation 1.4s infinite);
+                z-index: 0;
+
+                @include keyframes(planPointerAnimation) {
+                    0% { @include scale(0); @include opacity(0.7); }
+                    100% { @include scale(2); @include opacity(0); }
+                }
+            }
+
+            > i {
+                position: relative;
+                z-index: 3;
+                display: inline-block;
+                @include transition-primary;
+                color: $color-primary;
+            }
+
+            > span {
+                position: absolute;
+                top: 100%;
+                margin-top: 1rem;
+                left: 50%;
+                display: block;
+                width: 150px;
+                line-height: 1.2;
+                text-align: center;
+                @include translateX(-50%);
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                @include opacity(0.4);
+                @include transition-primary;
+            }
+
+            &:hover {
+                &:before {
+                    @include box-shadow(1px 1px 20px 0 rgba(#000,0.1));
+                    background-color: $color-primary;
+                    @include scale(1.1);
+                    visibility: visible;
+                    @include opacity(1);
+                }
+
+                > i {
+                    color: #fff;
+                    @include rotate(90deg);
+                }
+
+                > span {
+                    @include opacity(1);
+                }
+
+                & + .plan-popup {
+                    @include opacity(1);
+                    visibility: visible;
+                    @include translate3d(-50%,0,0);
+                }
+            }
+        }
+
+        .plan-popup {
+            position: absolute;
+            bottom: calc(100% + 20px);
+            left: 50%;
+            width: 280px;
+            @include transition-primary;
+            background-color: $color-dark;
+            visibility: hidden;
+            @include translate3d(-50%,-5px,0);
+            @include opacity(0);
+            font-size: 0.95rem;
+            line-height: 1.2;
+            color: #fff;
+            @include border-radius(0.4rem);
+            overflow: hidden;
+            @include box-shadow(0 0 40px 0 rgba(#000,0.1));
+
+            &:before {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to top, rgba(#000,0.5), rgba(#000,0));
+                content: ' ';
+            }
+
+            @media #{$screen-sm} {
+                display: none;
+            }
+
+            .popup-image {
+                @include border-radius(0.4rem);
+                width: 100%;
+                margin-top: -1px;
+            }
+
+            .popup-content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 1.25rem 1.5rem;
+            }
+        }
+    }
+}

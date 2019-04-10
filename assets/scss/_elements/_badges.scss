@@ -1,0 +1,51 @@
+/* 6.3 Badges
+----------------------------------------------------------*/
+
+.badge {
+    border: none;
+    padding: 0.65rem 1rem;
+    @include border-radius(2rem);
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 70%;
+    background-color: $color-light;
+    color: inherit;
+
+    > i {
+        font-size: 1.8em;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+        margin-top: -0.4em;
+        margin-bottom: -0.4em;
+
+        &:first-child {
+            margin-right: 0.5rem;
+            margin-left: -0.5rem;
+        }
+    }
+
+    &.no-uppercase {
+        text-transform: none;
+    }
+}
+
+$k: 1;
+@for $i from 1 through length($colorVersions)/2 {
+    $type: nth($colorVersions,$k);
+    $color: nth($colorVersions,$k+1);
+
+    &.badge-#{$type} {
+        border-color: transparent;
+        background-color: $color;
+        color: #fff;
+    }
+    $k: $k+2;
+}
+
+&.badge-white {
+    border-color: transparent;
+    background-color: #fff;
+    color: $color-primary; 
+}

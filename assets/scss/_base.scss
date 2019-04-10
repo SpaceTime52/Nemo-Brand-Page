@@ -1,0 +1,68 @@
+@charset 'UTF-8';
+/* -----------------------------------------------------------------------------
+
+Chata - Modern Real Estate Template + E-Commerce
+
+File:			Base SCSS File (Classic)
+Version:        1.0
+Last change:    16/06/17
+Author:			Suelo 
+
+Table of Contents:
+
+1. Setup
+2. Basic
+3. Header 
+-- 3.1 Header Horizontal
+-- 3.2 Header Vertical
+4. Content 
+-- 4.1 Blog
+-- 4.2 Features
+-- 4.3 Objects
+-- 4.4 Other
+-- 4.5 Page Title
+-- 4.6 Plan
+-- 4.7 Sections
+5. Footer
+6. Elements 
+-- 6.1 Alerts
+-- 6.2 Backgrounds
+-- 6.3 Badges
+-- 6.4 Buttons
+-- 6.5 Carousel
+-- 6.6 Carousel
+-- 6.7 Forms 
+-- 6.8 Icons
+-- 6.9 Loader
+-- 6.10 Modals
+-- 6.11 Navigations
+-- 6.12 Notification Bar
+-- 6.13 Other
+-- 6.14 Pagination
+-- 6.15 Tooltips
+-- 6.16 Typography
+7. Widgets 
+8. Animations 
+
+-------------------------------------------------------------------------------- */
+
+// Import CSS3 Mixins 
+@import "../../node_modules/compass-mixins/lib/animation/core";
+@import "../../node_modules/compass-mixins/lib/compass";
+
+// Import Fonts 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+
+// Import Config 
+@import "config";
+
+// Import Styles
+@import "setup";
+@import "basics";
+@import "header";
+@import "content";
+@import "footer";
+@import "elements";
+@import "widgets";
+@import "animations";
+
