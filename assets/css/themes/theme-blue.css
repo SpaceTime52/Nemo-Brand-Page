@@ -634,7 +634,7 @@ img {
 
 #header.header-horizontal.dark {
   color: #fff;
-  background-color: #202124;
+  background-color: #425CC7;
 }
 
 #header.header-horizontal .module {
@@ -664,7 +664,7 @@ img {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #202124;
+    background-color: #425CC7;
     height: auto;
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -703,7 +703,7 @@ img {
   border-left: 1px solid #e3e3e3;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  background-color: #202124;
+  background-color: #425CC7;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
@@ -877,7 +877,7 @@ img {
 
 #header.header-vertical.dark {
   color: #fff;
-  background-color: #202124;
+  background-color: #425CC7;
 }
 
 #header.header-vertical .module-logo {
@@ -1017,7 +1017,7 @@ img {
 
 #navigation-mobile.dark {
   color: #fff;
-  background-color: #202124;
+  background-color: #425CC7;
 }
 
 #navigation-mobile.light {
@@ -1754,7 +1754,7 @@ img {
 
 .panel-objects-item {
   position: relative;
-  background-color: #202124;
+  background-color: #425CC7;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
@@ -2341,7 +2341,7 @@ pre {
   -moz-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  background-color: #202124;
+  background-color: #425CC7;
   visibility: hidden;
   -webkit-transform: translate3d(-50%, -5px, 0);
   -moz-transform: translate3d(-50%, -5px, 0);
@@ -2795,14 +2795,14 @@ section.protrude, .section.protrude {
 
 .alert-dark .close {
   background-color: #fff;
-  color: #202124;
+  color: #425CC7;
   -webkit-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.07);
   box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
 .alert-dark .close:hover, .alert-dark .close:focus {
-  background-color: #202124;
+  background-color: #425CC7;
   color: #fff;
 }
 
@@ -2954,7 +2954,7 @@ section.protrude, .section.protrude {
 }
 
 .bg-dark {
-  background-color: #202124 !important;
+  background-color: #425CC7 !important;
 }
 
 .bg-primary-tint {
@@ -3099,7 +3099,7 @@ section.protrude, .section.protrude {
 
 .badge-dark {
   border-color: transparent;
-  background-color: #202124;
+  background-color: #425CC7;
   color: #fff;
 }
 
@@ -3286,7 +3286,7 @@ section.protrude, .section.protrude {
 
 .btn-dark {
   border-color: #202124;
-  background-color: #202124;
+  background-color: #425CC7;
   color: #fff;
   color: #fff;
 }
@@ -3414,13 +3414,13 @@ section.protrude, .section.protrude {
 }
 
 .btn-outline-dark:before {
-  background-color: #202124;
+  background-color: #425CC7;
 }
 
 .btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active, .btn-outline-dark:focus:active {
   color: #fff;
   border-color: #202124;
-  background-color: #202124;
+  background-color: #425CC7;
 }
 
 .btn-group > .btn:first-child:not(:last-child) {
@@ -4463,7 +4463,7 @@ label {
 }
 
 .icon.icon-dark {
-  color: #202124;
+  color: #425CC7;
 }
 
 .icon.icon-dark {
@@ -4656,7 +4656,7 @@ label {
 }
 
 .icon.icon-circle.icon-dark {
-  background-color: #202124;
+  background-color: #425CC7;
 }
 
 .icon.icon-circle.icon-facebook {
@@ -5400,7 +5400,7 @@ label {
 }
 
 .modal-backdrop {
-  background-color: #202124;
+  background-color: #425CC7;
 }
 
 .modal-backdrop.show {

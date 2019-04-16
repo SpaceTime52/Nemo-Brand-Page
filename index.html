@@ -17,8 +17,11 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+
 <!-- CSS Plugins -->
-<link rel="stylesheet" href="assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/plugins/slick-carousel/slick/slick.css" />
 <link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css" />
 <link rel="stylesheet" href="assets/plugins/animsition/dist/css/animsition.min.css" />
@@ -33,6 +36,11 @@
 <!-- CSS Theme -->
 <link id="theme" rel="stylesheet" href="assets/css/themes/theme-blue.min.css" />
 
+
+<!-- Vue.js -->
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+
 </head>
 
 <body class="header-vertical dark-overlay">
@@ -46,16 +54,17 @@
         <div class="header-vertical-container">
 
             <!-- Module - Logo -->
-            <a href="index.html" class="module module-logo"><img src="images/android-chrome-256x256.png" width="80" alt=""></a>
+            <a href="index.html" class="module module-logo"><img src="images/nemo_newlogo.svg" width="80" alt=""></a>
 
             <!-- Module - Navigation -->
             <nav id="navigation-main" class="module module-nav">
                 <ul class="nav nav-main-vertical">
                     <li><a href="#home">Start</a></li>
                     <li><a href="#about">About NEMOLAB</a></li>
-                    <li><a href="#flats">Flats List</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#flats">Printing Service</a></li>
+                    <li><a href="#features">Design Service</a></li>
+                    <li><a href="#gallery">Publication</a></li>
+                    <li><a href="#who-we-are">Business Concierge</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="selector"></div>
@@ -63,26 +72,25 @@
 
             <!-- Module - Objects -->
             <div class="module module-object" data-toggle="panel-objects">
-                <img class="object-image" src="assets/img/photos/object_thumbnail.png" alt="">
-                <span class="object-name">Wroclaw, Zlota 66</span>
+                <img class="object-image" src="images/moreimage.jpg" width="50"  alt="">
+                <span class="object-name">Nemolab 서비스 더보기</span>
                 <span class="object-indicator"><i class="ti ti-menu"></i></span>
             </div>
-
         </div>
 
     </header>
     <!-- Header / End -->
 
-    <!-- Navigation Mobile -->
+    <!-- Navigation Mobile : 상단메뉴 &토글 -->
     <nav id="navigation-mobile" class="dark">
 
         <!-- Module - Logo -->
-        <a href="index.html" class="module module-logo"><img src="assets/img/logo-light.svg" width="80" alt=""></a>
+        <a href="#" id="nav-toggle"class="module module-logo"><img src="images/nemo_newlogo_horizontal.svg" width="50" alt="" style="margin:18px 0px"></a>
 
         <!-- Module - Navigation Toggle -->
-        <div class="module module-nav-toggle">
+        <!-- <div class="module module-nav-toggle"> 
             <a href="#" id="nav-toggle" class="nav-toggle"><span></span><span></span><span></span><span></span></a>
-        </div>
+        </div> -->
 
     </nav>
     <!-- Navigation Mobile / End -->
@@ -98,57 +106,60 @@
                 <!-- Slide -->
                 <div class="slide">
                     <div class="slide-bg bg-image-holder">
-                        <img src="assets/img/photos/slider01.jpg" alt="">
+                        <img src="images/main-images/mainImage01.jpg" alt="">
                     </div>
                     <div class="slide-content container-custom text-center">
-                        <h1>Neat architecture design</h1>
+                        <h1>RELIABLE PARTNER</h1>
+                        <h3>Business Visual Coordinator</h3>
                     </div>
                 </div>
                 <!-- Slide -->
                 <div class="slide">
                     <div class="slide-bg bg-image-holder">
-                        <img src="assets/img/photos/slider02.jpg" alt="">
+                        <img src="images/main-images/mainImage02.jpg" alt="">
                     </div>
                     <div class="slide-content container-custom text-center">
-                        <h1>Firendly einvroment</h1>
+                        <h1>QUICK FRIEND</h1>
+                        <h3>빠르고 정확한 서비스</h3>
                     </div>
                 </div>
                 <!-- Slide -->
                 <div class="slide">
                     <div class="slide-bg bg-image-holder">
-                        <img src="assets/img/photos/slider03.jpg" alt="">
+                        <img src="images/main-images/mainImage03.jpg" alt="">
                     </div>
                     <div class="slide-content container-custom text-center">
-                        <h1>Perfect details</h1>
+                        <h1>SKILLFUL</h1>
+                        <h3>Visual Total Services</h3>
                     </div>
                 </div>
                 <!-- Slide -->
                 <div class="slide">
                     <div class="slide-bg bg-image-holder">
-                        <img src="assets/img/photos/slider04.jpg" alt="">
+                        <img src="images/main-images/mainImage04.jpg" alt="">
                     </div>
                     <div class="slide-content container-custom text-center">
-                        <h1>Beautiful interiors</h1>
+                        <h1>BUSINESS CONCIERGE</h1> <br>
+                        <h3>Reliable Business Concierge</h3>
                     </div>
                 </div>
                 <!-- Slide -->
-                <div class="slide">
+                <!-- <div class="slide">
                     <div class="slide-bg bg-image-holder">
                         <img src="assets/img/photos/slider05.jpg" alt="">
                     </div>
                     <div class="slide-content container-custom text-center">
-                        <h1>Feel the nature</h1>
+                        <h1>NEMOLAB</h1>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Slider Navigation -->
             <div class="slider-main-nav">
-                <div class="slide"><img src="assets/img/photos/slider01_thumbnail.jpg" alt=""></div>
-                <div class="slide"><img src="assets/img/photos/slider02_thumbnail.jpg" alt=""></div>
-                <div class="slide"><img src="assets/img/photos/slider03_thumbnail.jpg" alt=""></div>
-                <div class="slide"><img src="assets/img/photos/slider04_thumbnail.jpg" alt=""></div>
-                <div class="slide"><img src="assets/img/photos/slider05_thumbnail.jpg" alt=""></div>
+                <div class="slide"><img src="images/main-images/mainImage01_thnl.jpg" alt=""></div>
+                <div class="slide"><img src="images/main-images/mainImage02_thnl.jpg" alt=""></div>
+                <div class="slide"><img src="images/main-images/mainImage03_thnl.jpg" alt=""></div>
+                <div class="slide"><img src="images/main-images/mainImage04_thnl.jpg" alt=""></div>
             </div>
 
             <!-- Gallery Toggle -->
@@ -168,8 +179,8 @@
                 <div class="row gutters-lg align-items-center">
                     <div class="col-lg-4">
                         <span class="badge badge-default mb-5"><i class="fa fa-check-circle text-success"></i>Ready to sell</span>
-                        <h1 class="mb-0">Real Estate Title</h1>
-                        <p class="lead text-muted mb-5">San Franciscio, St. Jhon Street 4321</p>
+                        <h1 class="mb-0">인쇄 및 출력 서비스</h1>
+                        <p class="lead text-muted mb-5">비즈니스 인쇄 및 출력</p>
                         <!-- Feature #1 -->
                         <div class="feature feature-1 mb-0">
                             <i class="icon icon-primary ti ti-home animated" data-animation="fadeInDown"></i>
@@ -567,7 +578,8 @@
                     </address>
                     <p class="lead">
                         E: <a class="link-inherit" href="#">nemo@nemolab.co.kr</a><br>
-                        P: +82 2 2633 1308
+                        제작: +82 2 2633 1308<br>
+                        디자인: +82 2 2633 1306
                     </p>
                     <a href="#" class="icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="icon icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
@@ -577,10 +589,27 @@
                 </div>
                 <div class="image col-xl-8 col-md-7">
                     <div id="google-map" class="bg-map" data-latitude="40.758895" data-longitude="-73.985131" data-style="wy"></div>
+
                 </div>
             </div>
 
+            <div class="row">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#thisModal">
+                        Launch demo modal
+                </button>
+                    
+
+
+
+
+            </div>
+
         </section>
+
+ 
+
+
 
     </div>
     <!-- Content / End -->
@@ -692,6 +721,8 @@
 <script src="assets/plugins/photoswipe/dist/photoswipe-ui-default.min.js"></script>
 <script src="assets/plugins/twitter-fetcher/js/twitterFetcher_min.js"></script>
 
+
+
 <!-- JS Core -->
 <script src="assets/js/core.min.js"></script>
 
@@ -761,6 +792,27 @@
 
 <!-- JS Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+                <!-- Modal : 코드 상 나중에 입력한 것일 수록 위로 올라옵니다. -->
+                <div class="modal fade" id="thisModal" tabindex="-1" style="position:auto" dialog" >
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
 
 </body>
 
