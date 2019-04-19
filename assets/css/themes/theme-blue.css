@@ -44,7 +44,8 @@ Table of Contents:
 8. Animations 
 
 -------------------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+KR|Poppins|Source+Sans+Pro');
+
 /* ----------------------------------------------------------------------------- */
 /* --- 1. SETUP
 /* ----------------------------------------------------------------------------- */
@@ -61,7 +62,7 @@ html {
 body {
   position: relative;
   color: #343840;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   line-height: 1.8;
   overflow-x: hidden;
@@ -5810,16 +5811,17 @@ figure {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
 
 h1, .h1 {
+  font-weight: 900;
   font-size: 2.75rem;
 }
 
 h2, .h2 {
+  font-weight: 700;
   font-size: 2.25rem;
 }
 
