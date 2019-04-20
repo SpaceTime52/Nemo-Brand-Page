@@ -3102,7 +3102,7 @@ section.protrude,
     -o-border-radius: .2em;
     border-radius: .2em;
     padding: 0.95rem 2rem 1.05rem;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     -webkit-transition: all .25s ease-out;
     -moz-transition: all .25s ease-out;
     -o-transition: all .25s ease-out;
@@ -5764,7 +5764,7 @@ figure {
 }
 
 .pagination>.page-item>.page-link.active {
-    color: #3D64CC
+    color: #3D64CC 
 }
 
 .pagination>.page-item>.page-link:hover {
