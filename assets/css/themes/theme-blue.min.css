@@ -127,6 +127,12 @@ img {
         width: 100%;
         margin-bottom: 3rem
     }
+
+    #textedService {
+        text-align:center;
+        font-size: calc(16px + 2.5vw)
+    }
+
 }
 
 .page-content>.page-sidebar {
@@ -5538,7 +5544,8 @@ label {
 hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    border-color: #e3e3e3
+    border-color: #e3e3e3;
+    width: 80%
 }
 
 @media only screen and (max-width: 767px) {
@@ -5905,7 +5912,8 @@ h2,
 
 h4,
 .h4 {
-    font-weight: 500
+    font-weight: 500;
+    font-size: calc(16px + 0.7vw)
 }
 
 h5,
@@ -5918,7 +5926,7 @@ h6,
 .h6 {
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 0.85rem
+    font-size: calc(11px + 0.7vw)
 }
 
 .display-1,
