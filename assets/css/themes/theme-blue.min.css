@@ -1831,6 +1831,8 @@ img {
     color: #ebd072
 }
 
+
+
 .grey-to-color {
     -webkit-transition: all .25s ease-out;
     -moz-transition: all .25s ease-out;
@@ -3691,6 +3693,32 @@ section.protrude,
     margin-bottom: 1.75rem
 }
 
+@media (max-width: 767px) { 
+	
+	.card-deck-wrapper {margin-right:0;margin-left:0;}
+	.card-deck {
+	    display: block;
+	    width: 100%;
+        margin-bottom: .75rem;
+        margin-right: 0px;
+	    table-layout: fixed;
+	    border-spacing: 1.25rem 0;
+	}
+	.card-deck .card {
+	    display: block;
+	    margin-bottom: .75rem;
+	    vertical-align: top;
+	}
+  
+  /* .card-deck .card:not(:first-child) {
+    margin-left: 0px;
+} */
+  
+}
+
+
+
+
 .card-header,
 .card-footer {
     padding: 1.5rem 1.75rem;
@@ -3704,6 +3732,8 @@ section.protrude,
 .card-block {
     padding: 1.5rem 1.75rem
 }
+
+
 
 .card-block:first-child .icon-circle {
     margin-top: -30px
@@ -5892,7 +5922,7 @@ h5,
 h6,
 .h6 {
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
     font-weight: 500;
     font-family: "Nanumsquare", sans-serif;
     line-height: 1.5
@@ -5926,7 +5956,7 @@ h6,
 .h6 {
     font-weight: 500;
     text-transform: uppercase;
-    font-size: calc(11px + 0.7vw)
+    font-size: calc(9px + 0.7vw)
 }
 
 .display-1,
@@ -5958,7 +5988,7 @@ dl dd {
 
 .blockquote {
     position: relative;
-    background-color: #f5f7f7;
+    background-color: rgba( 255, 255, 255, 0.2 );
     border: none;
     padding: 0;
     -webkit-border-radius: .3rem;
