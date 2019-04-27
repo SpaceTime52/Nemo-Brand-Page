@@ -628,3 +628,5 @@ $(window).on('resize', function (){
         Waypoint.refreshAll()
     },600);
 });
+
+

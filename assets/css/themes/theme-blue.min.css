@@ -6699,3 +6699,7 @@ a.text-dark:focus {
     z-index: -1;
 }
 
+div.border-radius10{
+    border-radius:10em;
+}
+

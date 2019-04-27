@@ -192,7 +192,19 @@
                 </div>
 
 
-                <div class="container-custom m-5">
+                <div class="container-custom gutters-lg m-5">
+
+                    <!-- <div class="container-custom m-1 border border-radius10">
+
+                            <div class="row">
+                            <div class="col m-1 border tile square text-center">print<br>인쇄</div>
+                            <div class="col m-1 border border-radius10 text-center">print<br>인쇄</div>
+                            <div class="col m-1 border border-radius10 text-center">print<br>인쇄</div>
+                            <div class="col m-1 border border-radius10 text-center">print<br>인쇄</div>
+                            </div>
+
+                    </div> -->
+
                     <div class="row gutters-lg align-items-center">
                         <div class="col-lg-12 col-md-12 mb-5 mb-md-0 text-center">
                             <img src="images/what-we-do.png" style='width: 80%;max-width:500px'>
@@ -213,7 +225,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 pt-4" id="textedService" data-local-scroll>
                             <h2>Nemo is everywhere</h2>
-                            <p> 
+                            <p>
                                 <h6>사람들은 네모난 무언가를 통해 세상을 경험하고</br>
                                     또 네모를 통해 사람들에게 드러나기를 기대합니다.</h6>
                             </p>
@@ -230,7 +242,7 @@
 
             </section>
 
-            <!-- Section / Flats -->
+            <!-- Section / Printing -->
             <section id="printing" class="section bg-light pt-0 pb-5">
 
                 <!-- Objects - Search -->
@@ -258,173 +270,156 @@
                     <div class="text-right">
                         <!-- Objects - Change Display -->
                         <ul class="nav nav-view" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#grid_view"><i
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#grid_view1"><i
                                         class="fa fa-th"></i></a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#list_view"><i
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#list_view1"><i
                                         class="fa fa-th-list"></i></a></li>
                         </ul>
                     </div>
 
                     <!-- Sort of Print Services -->
                     <div class="tab-content">
-                        <!-- Sort of Print Services : Grid View -->
-                        <div id="grid_view" class="tab-pane fade show active" role="tabpanel">
+                        <!-- Sort of Print Services : Grid View 1-->
+                        <div id="grid_view1" class="tab-pane fade show active" role="tabpanel">
                             <!-- Objects - Grid-->
                             <div class="objects-grid gutters-sm row">
                                 <div class="col-lg-3 col-6">
                                     <!-- Object - Vertical -->
-                                    <div class="object object-vertical">
-                                        <div class="object-image">
-                                            <a class="link-inherit" href="object.html"><img
-                                                    src="assets/img/objects/object01.jpg" alt=""></a>
+                                    <div class="object object-vertical" style="cursor: pointer;">
+                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                            <img src="assets/img/objects/object01.jpg" alt="">
                                         </div>
-                                        <div class="object-content">
-                                            <h5 class="object-title"><a class="link-inherit" href="object.html">문서
-                                                    출력</a></h5>
+                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                            <h5 class="object-title">Service Name</h5>
                                             <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Total area:</span> 92m<sup>2</sup></li>
+                                                <li><span class="text-muted">Service Information</span></li>
                                             </ul>
-                                            <a href="object.html" class="object-btn btn btn-secondary"><span
-                                                    class="hidden-xs-down">View</span> Details</a>
+                                            <button class="object-btn btn btn-secondary"><span
+                                                    class="hidden-xs-down">자세히 </span>보기</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6">
                                     <!-- Object - Vertical -->
-                                    <div class="object object-vertical">
-                                        <div class="object-image">
-                                            <a class="link-inherit" href="object.html"><img
-                                                    src="assets/img/objects/object01.jpg" alt=""></a>
+                                    <div class="object object-vertical" style="cursor: pointer;">
+                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                            <img src="assets/img/objects/object01.jpg" alt="">
                                         </div>
-                                        <div class="object-content">
-                                            <h5 class="object-title"><a class="link-inherit" href="object.html">대형
-                                                    출력</a></h5>
+                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                            <h5 class="object-title">Service Name</h5>
                                             <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Total area:</span> 92m<sup>2</sup></li>
+                                                <li><span class="text-muted">Service Information</span></li>
                                             </ul>
-                                            <a href="object.html" class="object-btn btn btn-secondary"><span
-                                                    class="hidden-xs-down">View</span> Details</a>
+                                            <button class="object-btn btn btn-secondary"><span
+                                                    class="hidden-xs-down">자세히 </span>보기</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6">
                                     <!-- Object - Vertical -->
-                                    <div class="object object-vertical">
-                                        <div class="object-image">
-                                            <a class="link-inherit" href="object.html"><img
-                                                    src="assets/img/objects/object01.jpg" alt=""></a>
+                                    <div class="object object-vertical" style="cursor: pointer;">
+                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                            <img src="assets/img/objects/object01.jpg" alt="">
                                         </div>
-                                        <div class="object-content">
-                                            <h5 class="object-title"><a class="link-inherit" href="object.html">대량
-                                                    인쇄</a></h5>
+                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                            <h5 class="object-title">Service Name</h5>
                                             <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Total area:</span> 92m<sup>2</sup></li>
+                                                <li><span class="text-muted">Service Information</span></li>
                                             </ul>
-                                            <a href="object.html" class="object-btn btn btn-secondary"><span
-                                                    class="hidden-xs-down">View</span> Details</a>
+                                            <button class="object-btn btn btn-secondary"><span
+                                                    class="hidden-xs-down">자세히 </span>보기</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6">
                                     <!-- Object - Vertical -->
-                                    <div class="object object-vertical">
-                                        <div class="object-image">
-                                            <a class="link-inherit" href="object.html"><img
-                                                    src="assets/img/objects/object01.jpg" alt=""></a>
+                                    <div class="object object-vertical" style="cursor: pointer;">
+                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                            <img src="assets/img/objects/object01.jpg" alt="">
                                         </div>
-                                        <div class="object-content">
-                                            <h5 class="object-title"><a class="link-inherit" href="object.html">고급
-                                                    제본</a></h5>
+                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                            <h5 class="object-title">Service Name</h5>
                                             <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Total area:</span> 92m<sup>2</sup></li>
+                                                <li><span class="text-muted">Service Information</span></li>
                                             </ul>
-                                            <a href="object.html" class="object-btn btn btn-secondary"><span
-                                                    class="hidden-xs-down">View</span> Details</a>
+                                            <button class="object-btn btn btn-secondary"><span
+                                                    class="hidden-xs-down">자세히 </span>보기</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Sort of Print Services : List View -->
-                        <div id="list_view" class="tab-pane fade" role="tabpanel">
+                        <!-- Sort of Print Services : List View 1-->
+                        <div id="list_view1" class="tab-pane fade" role="tabpanel">
                             <!-- Objects - List -->
                             <div class="objects-list">
                                 <!-- Object - Horizontal -->
-                                <div class="object object-horizontal">
-                                    <div class="object-image">
-                                        <a class="link-inherit" href="object.html"><img
-                                                src="assets/img/objects/object01.jpg" alt=""></a>
+                                <div class="object object-horizontal" style="cursor: pointer;">
+                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                        <img src="assets/img/objects/object01.jpg" alt="">
                                     </div>
-                                    <div class="object-content">
-                                        <h5 class="object-title"><a class="link-inherit" href="object.html">문서 출력 </a>
-                                        </h5>
+                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                        <h5 class="object-title">Service Name</h5>
                                         <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Total area:</span>
-                                                92m<sup>2</sup></li>
+                                            <li class="list-inline-item"><span class="text-muted">Service
+                                                    Information</span></li>
                                         </ul>
                                     </div>
-                                    <a href="object.html" class="object-btn btn btn-secondary"><span
-                                            class="hidden-xs-down">View</span> Details</a>
+                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
+                                        보기</button>
                                 </div>
                                 <!-- Object - Horizontal -->
-                                <div class="object object-horizontal">
-                                    <div class="object-image">
-                                        <a class="link-inherit" href="object.html"><img
-                                                src="assets/img/objects/object01.jpg" alt=""></a>
+                                <div class="object object-horizontal" style="cursor: pointer;">
+                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                        <img src="assets/img/objects/object01.jpg" alt="">
                                     </div>
-                                    <div class="object-content">
-                                        <h5 class="object-title"><a class="link-inherit" href="object.html">문서 출력 </a>
-                                        </h5>
+                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                        <h5 class="object-title">Service Name</h5>
                                         <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Total area:</span>
-                                                92m<sup>2</sup></li>
+                                            <li class="list-inline-item"><span class="text-muted">Service
+                                                    Information</span></li>
                                         </ul>
                                     </div>
-                                    <a href="object.html" class="object-btn btn btn-secondary"><span
-                                            class="hidden-xs-down">View</span> Details</a>
+                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
+                                        보기</button>
                                 </div>
                                 <!-- Object - Horizontal -->
-                                <div class="object object-horizontal">
-                                    <div class="object-image">
-                                        <a class="link-inherit" href="object.html"><img
-                                                src="assets/img/objects/object01.jpg" alt=""></a>
+                                <div class="object object-horizontal" style="cursor: pointer;">
+                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                        <img src="assets/img/objects/object01.jpg" alt="">
                                     </div>
-                                    <div class="object-content">
-                                        <h5 class="object-title"><a class="link-inherit" href="object.html">문서 출력 </a>
-                                        </h5>
+                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                        <h5 class="object-title">Service Name</h5>
                                         <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Total area:</span>
-                                                92m<sup>2</sup></li>
+                                            <li class="list-inline-item"><span class="text-muted">Service
+                                                    Information</span></li>
                                         </ul>
                                     </div>
-                                    <a href="object.html" class="object-btn btn btn-secondary"><span
-                                            class="hidden-xs-down">View</span> Details</a>
+                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
+                                        보기</button>
                                 </div>
                                 <!-- Object - Horizontal -->
-                                <div class="object object-horizontal">
-                                    <div class="object-image">
-                                        <a class="link-inherit" href="object.html"><img
-                                                src="assets/img/objects/object01.jpg" alt=""></a>
+                                <div class="object object-horizontal" style="cursor: pointer;">
+                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                        <img src="assets/img/objects/object01.jpg" alt="">
                                     </div>
-                                    <div class="object-content">
-                                        <h5 class="object-title"><a class="link-inherit" href="object.html">문서 출력 </a>
-                                        </h5>
+                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                        <h5 class="object-title">Service Name</h5>
                                         <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Total area:</span>
-                                                92m<sup>2</sup></li>
+                                            <li class="list-inline-item"><span class="text-muted">Service
+                                                    Information</span></li>
                                         </ul>
                                     </div>
-                                    <a href="object.html" class="object-btn btn btn-secondary"><span
-                                            class="hidden-xs-down">View</span> Details</a>
+                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
+                                        보기</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
                     <!-- Pagination -->
-                    <nav class="mt-4">
+                    <nav class="mt-4"">
                         <ul class="pagination justify-content-end">
                             <li class="page-item">
                                 <a class="page-link" href="#" aria-label="Previous">
@@ -450,7 +445,7 @@
 
             </section>
 
-            <!-- Section / Features -->
+            <!-- Section / Design -->
             <section id="design" class="section">
 
                 <div class="container-custom">
@@ -464,11 +459,11 @@
                                 고객비즈니스를 지원하고 있습니다.</p>
                             <!-- Feature #1 -->
                             <div class="feature feature-1">
-                                    <i class="icon icon-primary p-1 ti ti-user"></i>
-                                    <div class="feature-content">
-                                        <h5 class="mb-0"><strong>Design Experts</strong></h5>
-                                        <p class="text-muted">평균 경력 7년의 디자인팀 구성으로 맞춤 컨설팅 제공</p>
-                                    </div>
+                                <i class="icon icon-primary p-1 ti ti-user"></i>
+                                <div class="feature-content">
+                                    <h5 class="mb-0"><strong>Design Experts</strong></h5>
+                                    <p class="text-muted">평균 경력 7년의 디자인팀 구성으로 맞춤 컨설팅 제공</p>
+                                </div>
                             </div>
                             <!-- Feature #1 -->
                             <div class="feature feature-1">
@@ -482,8 +477,8 @@
                             <div class="feature feature-1">
                                 <i class="icon icon-primary p-1 ti ti-ruler-alt-2"></i>
                                 <div class="feature-content">
-                                        <h5 class="mb-0"><strong>Printing Oriented Design</strong></h5>
-                                        <p class="text-muted">프린팅 전문가 기반 서비스로, 정밀한 인쇄 결과물을 제공 </p>
+                                    <h5 class="mb-0"><strong>Printing Oriented Design</strong></h5>
+                                    <p class="text-muted">프린팅 전문가 기반 서비스로, 정밀한 인쇄 결과물을 제공 </p>
                                 </div>
                             </div>
 
@@ -494,16 +489,16 @@
                         <div class="col-lg-4 col-sm-6">
 
                             <!-- Card -->
-                            <div class="card">
+                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
                                 <img src="assets/img/photos/feature03.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Paper Editorial Design</h5>
-                                    <p class="text-muted mb-0">도서, 카타로그, 브로슈어, 리플렛, 포스터, 배너, 현수막 등 각종 종이와 사인물을 디자인하고
+                                    <p class="text-muted mb-0">도서, 카타로그, 브로슈어, 리플렛, 포스터, 배너, 현수막 등 각종 인쇄제품을 디자인하고
                                         제작팀과 조율하여 논스탑으로 빠른 결과물을 제공합니다. </p>
                                 </div>
                             </div>
                             <!-- Card -->
-                            <div class="card">
+                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
                                 <img src="assets/img/photos/feature01.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Logo & Brand Design</h5>
@@ -515,21 +510,23 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <!-- Card -->
-                            <div class="card">
-                                    <img src="assets/img/photos/feature02.jpg" alt="" class="card-image">
-                                    <div class="card-block" style="font-family:nanumsquare">
-                                        <h5 class="mb-0">Information Graphics</h5>
-                                        <p class="text-muted mb-0">정보의 전달효과를 극대화하기 위해 도표와 이미지, 차트 구성 외 레이아웃과 컬러/강조등의 다양한 방법으로 개선/반영하여 제공합니다.</p>
-                                    </div>
+                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
+                                <img src="assets/img/photos/feature02.jpg" alt="" class="card-image">
+                                <div class="card-block" style="font-family:nanumsquare">
+                                    <h5 class="mb-0">Information Graphics</h5>
+                                    <p class="text-muted mb-0">정보의 전달효과를 극대화하기 위해 도표와 이미지, 차트 구성 외 레이아웃과 컬러/강조등의 다양한
+                                        방법으로 개선/반영하여 제공합니다.</p>
+                                </div>
                             </div>
                             <!-- Card -->
-                            <div class="card">
-                                    <img src="assets/img/photos/feature04.jpg" alt="" class="card-image">
-                                    <div class="card-block" style="font-family:nanumsquare">
-                                        <h5 class="mb-0">Web Contents Design</h5>
-                                        <p class="text-muted mb-0">웹/모바일 상세페이지, 썸네일, 웹페이지 UI 디자인 등 웹이나 파일에서 필요한 디자인을 제공합니다. 현재 웹 기획과 퍼블리싱, 개발은 서비스를 준비중입니다.</p>
-                                    </div>
+                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
+                                <img src="assets/img/photos/feature04.jpg" alt="" class="card-image">
+                                <div class="card-block" style="font-family:nanumsquare">
+                                    <h5 class="mb-0">Web Contents Design</h5>
+                                    <p class="text-muted mb-0">웹/모바일 상세페이지, 썸네일, 웹페이지 UI 디자인 등 웹이나 파일에서 필요한 디자인을 제공합니다.
+                                        현재 웹 기획과 퍼블리싱, 개발은 서비스를 준비중입니다.</p>
                                 </div>
+                            </div>
 
                         </div>
                     </div>
@@ -537,72 +534,80 @@
 
             </section>
 
-            <!-- Section / Gallery -->
+            <!-- Section / Contents -->
             <section id="contents" class="section bg-black cover dark">
 
                 <div class="objects-search bg-dark dark">
-                    <div class="bg-image-holder bg-image-fixed zooming dimmed-img"><img class="slide" src="images/main-images/mainImage01.jpg"
-                            alt=""></div>
+                    <div class="bg-image-holder bg-image-fixed zooming dimmed-img"><img class="slide"
+                            src="images/main-images/mainImage01.jpg" alt=""></div>
                     <div class="container-custom">
                         <h1 class="mb-1">Contents Publishing</h1>
                         <p class="lead text-muted">
-                                <h3>콘텐츠 출판 및 유통</h3>
-                            </p>
-                            <p class="mb-5 h5"> 네모연구소는 건강한 문화를 만들기 위한 도구로 컨텐츠와 그 매개를 연구할 계획입니다. 도서 외에 더 효과적인 경험을 제공할 수 있는 매개를 찾아 퍼블리싱을 연구할 계획입니다. <br>
-                                <br>  
+                            <h3>콘텐츠 출판 및 유통</h3>
+                        </p>
+                        <p class="mb-5 h5"> 네모연구소는 건강한 문화를 만들기 위한 도구로 컨텐츠와 그 매개를 연구할 계획입니다. 도서 외에 더 효과적인 경험을 제공할 수 있는
+                            매개를 찾아 퍼블리싱을 연구할 계획입니다. <br>
+                            <br>
                             네모연구소의 도서 출판 서비스는 다음 세개의 트랙으로 나뉘어 제공됩니다. </p>
-                            </ul>
+                        </ul>
 
                         <div class="card-deck mb-3 text-center" style="color:#333333">
-                                <div class="card mb-4 box-shadow">
-                                  <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal" style="font-family:'noto sans kr'">콘텐츠 출판 대행</h4>
-                                  </div>
-                                 <div class="card-body">
-                                    <h6   style="font-size:calc(13px+1.0vw)"><strong>출판의 전과정을 선택적으로 서비스합니다.</strong></h6>
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal" style="font-family:'noto sans kr'">콘텐츠 출판 대행
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 style="font-size:calc(13px+1.0vw)"><strong>출판의 전과정을 선택적으로 서비스합니다.</strong></h6>
                                     <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
-                                            <li>출판브랜드: NEMO</li>
-                                            <li>마케팅 및 유통 수수료 별도</li>
-                                            <li>서점 판매수익금 전액 인세지급</li>
+                                        <li>출판브랜드: NEMO</li>
+                                        <li>마케팅 및 유통 수수료 별도</li>
+                                        <li>서점 판매수익금 전액 인세지급</li>
                                     </ul>
-                                    <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em">출판 문의</button>
-                                  </div>
+                                    <button type="button" class="btn btn btn-block btn-primary"
+                                        style="font-size:1.1em" data-toggle="modal" data-target="#thisModal">출판 문의</button>
                                 </div>
-                                <div class="card mb-4 box-shadow">
-                                  <div class="card-header">
+                            </div>
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-header">
                                     <h4 class="my-0 font-weight-normal" style="font-family:'noto sans kr'">출판 업무 대행</h4>
-                                  </div>
-                                  <div class="card-body">
-                                        <h6 style="font-size:calc(13px+1.0vw)"><strong>출판사/브랜드의 출판업무를 선택적으로 대행합니다.</strong></h6>
-                                        <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
-                                                <li>출판브랜드: 고객사 브랜드</li>
-                                                <li>마케팅 및 유통 수수료 청구</li>
-                                                <li>서점 판매수익금 관리 대행</li>
-                                        </ul>
-                                    <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em">업무대행 문의</button>
-                                  </div> 
                                 </div>
-                                <div class="card mb-4 box-shadow">
-                                  <div class="card-header">
-                                    <h4 class="my-0 font-weight-normal" style="font-family:'noto sans kr'">브랜드 협력/제휴</h4>
-                                  </div>
-                                  <div class="card-body">
-                                        <h6 style="font-size:calc(13px+1.0vw)"><strong>협력 출판브랜드를 런칭하여, 책을 함께 출판합니다.</strong></h6>
-                                        <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
-                                                <li>출판브랜드: NEMO</li>
-                                                <li>콘텐츠 제공에 대한 인세 지급</li>
-                                                <li>마케팅 및 컨텐츠 협력</li>
-                                        </ul>
-                                    <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em">제휴 문의</button>
-                                  </div>
+                                <div class="card-body">
+                                    <h6 style="font-size:calc(13px+1.0vw)"><strong>출판사/브랜드의 출판업무를 선택적으로 대행합니다.</strong>
+                                    </h6>
+                                    <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
+                                        <li>출판브랜드: 고객사 브랜드</li>
+                                        <li>마케팅 및 유통 수수료 청구</li>
+                                        <li>서점 판매수익금 관리 대행</li>
+                                    </ul>
+                                    <button type="button" class="btn btn btn-block btn-primary"
+                                        style="font-size:1.1em" data-toggle="modal" data-target="#thisModal">업무대행 문의</button>
                                 </div>
-                              </div>
+                            </div>
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal" style="font-family:'noto sans kr'">브랜드 협력/제휴
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+                                    <h6 style="font-size:calc(13px+1.0vw)"><strong>협력 출판브랜드를 런칭하여, 책을 함께 출판합니다.</strong>
+                                    </h6>
+                                    <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
+                                        <li>출판브랜드: NEMO</li>
+                                        <li>콘텐츠 제공에 대한 인세 지급</li>
+                                        <li>마케팅 및 컨텐츠 협력</li>
+                                    </ul>
+                                    <button type="button" class="btn btn btn-block btn-primary"
+                                        style="font-size:1.1em" data-toggle="modal" data-target="#thisModal">제휴 문의</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </section>
 
-            <!-- Section / Who we are? -->
+            <!-- Section / Concierge -->
             <section id="concierge" class="section">
 
                 <div class="container">
@@ -618,28 +623,52 @@
                         <div class="col-lg-5 push-lg-1 col-md-6">
                             <h1 class="mb-1">Business Concierge</h1>
                             <p class="lead text-muted">
-                                <h3>종합적 대행/대여/관리 서비스</h3>
+                                <h3>비즈니스 종합 대행/대여/관리 서비스</h3>
                             </p>
                             <ul class="nav nav-icons" role="tablist">
-                                <li class="nav-item"><a href="#tab_about" data-toggle="tab" class="nav-link active"><i
-                                            class="ti-comment"></i>About us</a></li>
-                                <li class="nav-item"><a href="#tab_history" data-toggle="tab" class="nav-link"><i
-                                            class="ti-time"></i>Our History</a></li>
+                                <li class="nav-item m-4"><a href="#bizconcierge1" data-toggle="tab" class="nav-link active"><i
+                                            class="ti-comment"></i>서비스#1</a></li>
+                                            <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge2" data-toggle="tab" class="nav-link"><i
+                                            class="ti-time"></i>서비스#2</a></li>
+                                            <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge3" data-toggle="tab" class="nav-link"><i
+                                            class="ti-comment"></i>서비스#3</a></li>
+                                            <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge4" data-toggle="tab" class="nav-link"><i
+                                            class="ti-time"></i>서비스#4</a></li>
+                                            <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge5" data-toggle="tab" class="nav-link"><i
+                                            class="ti-comment"></i>서비스#5</a></li>
+                                            <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge6" data-toggle="tab" class="nav-link"><i
+                                            class="ti-time"></i>서비스#6</a></li>
+                                            <br>
                             </ul>
                             <div class="tab-content" data-local-scroll>
-                                <div id="tab_about" class="tab-pane fade show active" role="tabpanel">
-                                    <p class="lead">Mauris dolor orci, sagittis ut varius in, interdum nec sapien.
-                                        Mauris rutrum lacinia orci nec maximus.</p>
-                                    <p class="mb-5">Mauris dolor orci, sagittis ut varius in, interdum nec sapien.
-                                        Mauris rutrum lacinia orci nec maximus.</p>
-                                    <a href="#contact" class="btn btn-primary mb-4">Contact Us</a>
+                                <div id="bizconcierge1" class="tab-pane fade show active" role="tabpanel">
+                                    <p class="ml-4 mb-5">여기는 첫번째서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
                                 </div>
-                                <div id="tab_history" class="tab-pane" role="tabpanel">
-                                    <p class="lead">Sagittis ut varius in, interdum nec sapien. Mauris rutrum lacinia
-                                        orci nec maximus.</p>
-                                    <p class="mb-5">Mauris dolor orci, sagittis ut varius in, interdum nec sapien.
-                                        Mauris rutrum lacinia orci nec maximus.</p>
-                                    <a href="#contact" class="btn btn-primary mb-4">Contact Us</a>
+                                <div id="bizconcierge2" class="tab-pane" role="tabpanel">
+                                        <p class="ml-4 mb-5">여기는 2번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                        <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
+                                </div>
+                                <div id="bizconcierge3" class="tab-pane" role="tabpanel">
+                                        <p class="ml-4 mb-5">여기는 3번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                        <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
+                                </div>
+                                <div id="bizconcierge4" class="tab-pane" role="tabpanel">
+                                        <p class="ml-4 mb-5">여기는 4번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                        <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
+                                </div>
+                                <div id="bizconcierge5" class="tab-pane" role="tabpanel">
+                                        <p class="ml-4 mb-5">여기는 5번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                        <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
+                                </div>
+                                <div id="bizconcierge6" class="tab-pane" role="tabpanel">
+                                        <p class="ml-4 mb-5">여기는 6번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                        <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -652,26 +681,33 @@
             <section id="contact" class="section section-double bg-light">
 
                 <div class="row">
-                    <div class="content col-xl-4 col-md-5">
+                    <div class="content col-xl-5 col-md-6">
                         <h2 class="mb-0">Contact</h2>
                         <hr class="hr-primary">
                         <address class="korean-font">
-                            주식회사 네모연구소<br>
+                            <span class="lead">주식회사 네모연구소</span><br>
                             서울특별시 영등포구 경인로 775,<br>
                             에이스하이테크시티 1동 107호<br>
                         </address>
                         <p class="lead">
-                            E: <a class="link-inherit" href="#">nemo@nemolab.co.kr</a><br>
-                            제작: +82 2 2633 1308<br>
-                            디자인: +82 2 2633 1306
+                            대표 전화: <a href=”tel:0226331308″>02 2633 1308</a><br>
+                            제작: <a href=”tel:0226780400″>02 2678 0400</a> / <a href=”tel:0226787866″>7866</a><br>
+                            E-mail: <a href="javascript:void(0)" onclick="copyToClipboard('#nemomail'); alert('복사 되었습니다.');" target="_blank"><span id="nemomail">nemo@nemolab.co.kr</span><span class="text-muted"> - 주소복사</span></a><br>
+                            디자인: <a href=”tel:0226331306″>02 2633 1306</a><br>
+                            E-mail: <a href="javascript:void(0)" onclick="copyToClipboard('#designmail'); alert('복사 되었습니다.');" target="_blank"><span id="designmail">design@nemolab.co.kr</span><span class="text-muted"> - 주소복사</span></a><br>
                         </p>
-                        <a href="#" class="icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
+                        <!-- <a href="#" class="icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="icon icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
                         <a href="#" class="icon icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
                         <a href="#" class="icon icon-circle icon-sm icon-youtube"><i class="fa fa-youtube"></i></a>
-                        <a href="#" class="icon icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="icon icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a> -->
                     </div>
-                    <div class="image col-xl-8 col-md-7" style="border:4px dashed #bcbcbc">
+                    <div class="image col-xl-7 col-md-6" style="border:4px dashed #bcbcbc">
+
+
+
+
+
                     </div>
                 </div>
 
@@ -691,8 +727,8 @@
                     <div class="col-md-6 text-center text-md-right">
                         <ul class="nav nav-footer mr-4">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="documentation.html" target="_blank">Documentation</a></li>
-                            <li><a href="https://themeforest.net/user/suelo?ref=suelo" target="_blank">More</a></li>
+                            <li><a href="#" target="_blank">서비스카타로그</a></li>
+                            <li><a href="#" target="_blank">브랜드가이드</a></li>
                         </ul>
                     </div>
                 </div>
