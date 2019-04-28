@@ -40,10 +40,8 @@
     <!-- CSS Theme -->
     <link id="theme" rel="stylesheet" href="assets/css/themes/theme-blue.min.css" />
 
-
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
-
 
 </head>
 
@@ -246,6 +244,7 @@
             <!-- Section / Printing -->
             <section id="printing" class="section bg-light pt-0 pb-5">
 
+
                 <!-- Objects - Search -->
                 <div class="objects-search bg-dark dark">
                     <div class="bg-image-holder bg-image-fixed zooming dimmed-img">
@@ -267,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="objects-container container-custom">
+                <div class="objects-container container-custom" id="fivthApp">
                     <div class="text-right">
                         <!-- Objects - Change Display -->
                         <ul class="nav nav-view" role="tablist">
@@ -284,64 +283,17 @@
                         <div id="grid_view1" class="tab-pane fade show active" role="tabpanel">
                             <!-- Objects - Grid-->
                             <div class="objects-grid gutters-sm row">
-                                <div class="col-lg-3 col-6">
+                                <div class="col-lg-3 col-6" v-for="p in printingServices">
                                     <!-- Object - Vertical -->
-                                    <div class="object object-vertical" style="cursor: pointer;">
+                                    <div class="object object-vertical" style="cursor: pointer;"
+                                    v-if="curPage===p.whatPage">
                                         <div class="object-image" data-toggle="modal" data-target="#thisModal">
                                             <img src="assets/img/objects/object01.jpg" alt="">
                                         </div>
                                         <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                            <h5 class="object-title">Service Name</h5>
+                                            <h5 class="object-title">{{p.serviceName}}</h5>
                                             <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Service Information</span></li>
-                                            </ul>
-                                            <button class="object-btn btn btn-secondary"><span
-                                                    class="hidden-xs-down">자세히 </span>보기</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <!-- Object - Vertical -->
-                                    <div class="object object-vertical" style="cursor: pointer;">
-                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
-                                            <img src="assets/img/objects/object01.jpg" alt="">
-                                        </div>
-                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                            <h5 class="object-title">Service Name</h5>
-                                            <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Service Information</span></li>
-                                            </ul>
-                                            <button class="object-btn btn btn-secondary"><span
-                                                    class="hidden-xs-down">자세히 </span>보기</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <!-- Object - Vertical -->
-                                    <div class="object object-vertical" style="cursor: pointer;">
-                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
-                                            <img src="assets/img/objects/object01.jpg" alt="">
-                                        </div>
-                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                            <h5 class="object-title">Service Name</h5>
-                                            <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Service Information</span></li>
-                                            </ul>
-                                            <button class="object-btn btn btn-secondary"><span
-                                                    class="hidden-xs-down">자세히 </span>보기</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <!-- Object - Vertical -->
-                                    <div class="object object-vertical" style="cursor: pointer;">
-                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
-                                            <img src="assets/img/objects/object01.jpg" alt="">
-                                        </div>
-                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                            <h5 class="object-title">Service Name</h5>
-                                            <ul class="object-details list-unstyled">
-                                                <li><span class="text-muted">Service Information</span></li>
+                                                <li><span class="text-muted">{{p.serviceDetail}}</span></li>
                                             </ul>
                                             <button class="object-btn btn btn-secondary"><span
                                                     class="hidden-xs-down">자세히 </span>보기</button>
@@ -356,85 +308,37 @@
                             <!-- Objects - List -->
                             <div class="objects-list">
                                 <!-- Object - Horizontal -->
-                                <div class="object object-horizontal" style="cursor: pointer;">
+                                <div class="object object-horizontal" style="cursor: pointer;" v-for="p in printingServices" v-if="curPage===p.whatPage">
                                     <div class="object-image" data-toggle="modal" data-target="#thisModal">
                                         <img src="assets/img/objects/object01.jpg" alt="">
                                     </div>
                                     <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                        <h5 class="object-title">Service Name</h5>
+                                        <h5 class="object-title">{{p.serviceName}}</h5>
                                         <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Service
-                                                    Information</span></li>
+                                            <li class="list-inline-item"><span class="text-muted">{{p.serviceDetail}}</span></li>
                                         </ul>
                                     </div>
                                     <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
                                         보기</button>
                                 </div>
                                 <!-- Object - Horizontal -->
-                                <div class="object object-horizontal" style="cursor: pointer;">
-                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
-                                        <img src="assets/img/objects/object01.jpg" alt="">
-                                    </div>
-                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                        <h5 class="object-title">Service Name</h5>
-                                        <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Service
-                                                    Information</span></li>
-                                        </ul>
-                                    </div>
-                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
-                                        보기</button>
-                                </div>
-                                <!-- Object - Horizontal -->
-                                <div class="object object-horizontal" style="cursor: pointer;">
-                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
-                                        <img src="assets/img/objects/object01.jpg" alt="">
-                                    </div>
-                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                        <h5 class="object-title">Service Name</h5>
-                                        <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Service
-                                                    Information</span></li>
-                                        </ul>
-                                    </div>
-                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
-                                        보기</button>
-                                </div>
-                                <!-- Object - Horizontal -->
-                                <div class="object object-horizontal" style="cursor: pointer;">
-                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
-                                        <img src="assets/img/objects/object01.jpg" alt="">
-                                    </div>
-                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
-                                        <h5 class="object-title">Service Name</h5>
-                                        <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">Service
-                                                    Information</span></li>
-                                        </ul>
-                                    </div>
-                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
-                                        보기</button>
-                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Pagination -->
-                    <nav class="mt-4"">
-                        <ul class=" pagination justify-content-end">
+                    <nav class="mt-4">
+                        <ul class="pagination justify-content-end">
                         <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
+                            <a class="page-link" href="#a" @click="curPagePrevious()" aria-label="Previous">
                                 <i class="ti-angle-left"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                         </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item" v-for="p in pages" :class="{'active' : curPage === p}"><a class="page-link" href="#a" @click="curPage = p">{{ p }}</a></li>
+                        <!--현재페이지 p -->
                         <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
+                            <a class="page-link" href="#a" @click="curPageNext()" aria-label="Next">
                                 <i class="ti-angle-right"></i>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -443,7 +347,6 @@
                     </nav>
 
                 </div>
-
             </section>
 
             <!-- Section / Design -->
@@ -847,6 +750,7 @@
     <script src="assets/plugins/photoswipe/dist/photoswipe.min.js"></script>
     <script src="assets/plugins/photoswipe/dist/photoswipe-ui-default.min.js"></script>
     <script src="assets/plugins/twitter-fetcher/js/twitterFetcher_min.js"></script>
+    <script src="vue.js"></script>
 
     <!-- JS Core -->
     <script src="assets/js/core.min.js"></script>
