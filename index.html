@@ -645,10 +645,19 @@
                                 <li class="nav-item m-4"><a href="#bizconcierge6" data-toggle="tab" class="nav-link"><i
                                             class="ti-time"></i>서비스#6</a></li>
                                 <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge7" data-toggle="tab" class="nav-link"><i
+                                            class="ti-time"></i>서비스#7</a></li>
+                                <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge8" data-toggle="tab" class="nav-link"><i
+                                            class="ti-comment"></i>서비스#8</a></li>
+                                <br>
+                                <li class="nav-item m-4"><a href="#bizconcierge9" data-toggle="tab" class="nav-link"><i
+                                            class="ti-time"></i>서비스#9</a></li>
+                                <br>
                             </ul>
                             <div class="tab-content" data-local-scroll>
                                 <div id="bizconcierge1" class="tab-pane fade show active" role="tabpanel">
-                                    <p class="ml-4 mb-5">여기는 첫번째서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                    <p class="ml-4 mb-5">여기는 1번째서비스에 대한 내용을 소개하는 곳입니다.</p>
                                     <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
                                 </div>
                                 <div id="bizconcierge2" class="tab-pane" role="tabpanel">
@@ -669,6 +678,18 @@
                                 </div>
                                 <div id="bizconcierge6" class="tab-pane" role="tabpanel">
                                     <p class="ml-4 mb-5">여기는 6번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
+                                </div>
+                                <div id="bizconcierge7" class="tab-pane" role="tabpanel">
+                                    <p class="ml-4 mb-5">여기는 7번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
+                                </div>
+                                <div id="bizconcierge8" class="tab-pane" role="tabpanel">
+                                    <p class="ml-4 mb-5">여기는 8번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
+                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
+                                </div>
+                                <div id="bizconcierge9" class="tab-pane" role="tabpanel">
+                                    <p class="ml-4 mb-5">여기는 9번째 서비스에 대한 내용을 소개하는 곳입니다.</p>
                                     <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
                                 </div>
                             </div>
@@ -722,7 +743,7 @@
         <!-- Content / End -->
 
         <!-- Footer -->
-        <footer id="footer" class="footer-fixed bg-dark dark">
+        <!-- <footer id="footer" class="footer-fixed bg-dark dark">
 
             <div class="container-custom">
                 <div class="row align-items-center">
@@ -739,7 +760,7 @@
                 </div>
             </div>
 
-        </footer>
+        </footer> -->
         <!-- Footer / End -->
 
         <!-- Body Overlay -->
@@ -884,7 +905,7 @@
 
         var whereWeare = new naver.maps.LatLng(37.514505, 126.899966),
             map = new naver.maps.Map('map', {
-                center: whereWeare.destinationPoint(0, 500),
+                center: whereWeare.destinationPoint(0, 0),
                 zoom: 10
             }),
             marker = new naver.maps.Marker({
@@ -894,8 +915,8 @@
 
         var contentString = [
                 '<div class="container text-center">',
-                '   <br> <h3>네모연구소!</h3>',
-                '   <p class="korean-font">에이스하이테크시티 1동 107호<br/>', 
+                '   <br> <h3>네모연구소</h3>',
+                '   <p class="korean-font"> 에이스하이테크시티 1동 107호<br/>', 
                 '   </p>',
                 '</div>'
             ].join('');
@@ -912,13 +933,9 @@
             }
         });
 
-        infowindow.open(map, marker);
+        // infowindow.open(map, marker);
 
     </script>
-
-    <!-- JS Google Map -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
-
 
     <!-- Modal : 코드 상 나중에 입력한 것일 수록 위로 올라옵니다. -->
     <div class="modal fade" id="thisModal" tabindex="-1" style="position:auto" dialog">
