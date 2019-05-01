@@ -109,7 +109,7 @@
                 <div class="slider-main slider-kenburns inner-controls">
                     <!-- Slide -->
                     <div class="slide">
-                        <div class="slide-bg bg-image-holder">
+                        <div class="slide-bg bg-image-holder dimmed-img">
                             <img src="images/main-images/mainImage01.jpg" alt="">
                         </div>
                         <div class="slide-content container-custom text-center">
@@ -119,7 +119,7 @@
                     </div>
                     <!-- Slide -->
                     <div class="slide">
-                        <div class="slide-bg bg-image-holder">
+                        <div class="slide-bg bg-image-holder dimmed-img">
                             <img src="images/main-images/mainImage02.jpg" alt="">
                         </div>
                         <div class="slide-content container-custom text-center">
@@ -129,7 +129,7 @@
                     </div>
                     <!-- Slide -->
                     <div class="slide">
-                        <div class="slide-bg bg-image-holder">
+                        <div class="slide-bg bg-image-holder dimmed-img">
                             <img src="images/main-images/mainImage03.jpg" alt="">
                         </div>
                         <div class="slide-content container-custom text-center">
@@ -139,7 +139,7 @@
                     </div>
                     <!-- Slide -->
                     <div class="slide">
-                        <div class="slide-bg bg-image-holder">
+                        <div class="slide-bg bg-image-holder dimmed-img">
                             <img src="images/main-images/mainImage04.jpg" alt="">
                         </div>
                         <div class="slide-content container-custom text-center">
@@ -309,16 +309,16 @@
                             <div class="objects-list">
                                 <!-- Object - Horizontal -->
                                 <div class="object object-horizontal" style="cursor: pointer;" v-for="p in printingServices" v-if="curPage===p.whatPage">
-                                    <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                    <div class="object-image col-4" data-toggle="modal" data-target="#thisModal">
                                         <img :src="'images/printing/'+p.imageNum" alt="">
                                     </div>
-                                    <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                    <div class="object-content col-5" data-toggle="modal" data-target="#thisModal">
                                         <h5 class="object-title">{{p.serviceName}}</h5>
                                         <ul class="object-details list-inline">
                                             <li class="list-inline-item"><span class="text-muted">{{p.serviceDetail}}</span></li>
                                         </ul>
                                     </div>
-                                    <button class="object-btn btn btn-secondary"><span class="hidden-xs-down">자세히</span>
+                                    <button class="object-btn btn btn-secondary col-3"><span class="hidden-xs-down">자세히</span>
                                         보기</button>
                                 </div>
                                 <!-- Object - Horizontal -->
