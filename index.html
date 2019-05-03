@@ -20,7 +20,8 @@
 
 
     <!-- NAVER MAPs -->
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=06ase7e57b"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=06ase7e57b">
+    </script>
 
     <!-- CSS Plugins -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -209,7 +210,8 @@
                     <div class="row gutters-lg align-items-center">
                         <div class="col-lg-12 col-md-12 mb-5 mb-md-0 text-center">
                             <h3>"beyond Printing"</h3>
-                            <h4 class="korean-font text-center">고객의 생각과 정보와 메세지, 가치를<br>더 효과적이고 효율적으로 전달하도록<br><br> </h4>
+                            <h4 class="korean-font text-center">고객의 생각과 정보와 메세지, 가치를<br>더 효과적이고 효율적으로 전달하도록<br><br>
+                            </h4>
                             <img src="images/what-we-do.png" style='width: 80%;max-width:500px'>
                             <br><br>
                             <p>
@@ -272,7 +274,7 @@
 
                 <!-- Board 구성 -->
                 <div class="objects-container container-custom" id="fivthApp">
- 
+
                     <!-- Objects - Change Display -->
                     <div class="text-right">
                         <ul class="nav nav-view" role="tablist">
@@ -293,11 +295,11 @@
                                 <div class="col-lg-3 col-6" v-for="p in printingServices">
                                     <!-- Object - Vertical -->
                                     <div class="object object-vertical" style="cursor: pointer;"
-                                    v-if="curPage===p.whatPage">
-                                        <div class="object-image" data-toggle="modal" data-target="#thisModal">
+                                        v-if="curPage===p.whatPage">
+                                        <div class="object-image" data-toggle="modal" :data-target="'#'+p.modalID">
                                             <img :src="'images/printing/'+p.imageNum" alt="">
                                         </div>
-                                        <div class="object-content" data-toggle="modal" data-target="#thisModal">
+                                        <div class="object-content" data-toggle="modal" :data-target="'#'+p.modalID">
                                             <h5 class="object-title">{{p.serviceName}}</h5>
                                             <ul class="object-details list-unstyled">
                                                 <li><span class="text-muted">{{p.serviceDetail}}</span></li>
@@ -315,41 +317,48 @@
                             <!-- Objects - List -->
                             <div class="objects-list">
                                 <!-- Object - Horizontal -->
-                                <div class="object object-horizontal" style="cursor: pointer;" v-for="p in printingServices" v-if="curPage===p.whatPage">
-                                    <div class="object-image col-4" data-toggle="modal" data-target="#thisModal">
+                                <div class="object object-horizontal" style="cursor: pointer;"
+                                    v-for="p in printingServices" v-if="curPage===p.whatPage">
+                                    <div class="object-image col-4" data-toggle="modal" :data-target="'#'+p.modalID">
                                         <img :src="'images/printing/'+p.imageNum" alt="">
                                     </div>
-                                    <div class="object-content col-5" data-toggle="modal" data-target="#thisModal">
+                                    <div class="object-content col-5" data-toggle="modal" :data-target="'#'+p.modalID">
                                         <h5 class="object-title">{{p.serviceName}}</h5>
                                         <ul class="object-details list-inline">
-                                            <li class="list-inline-item"><span class="text-muted">{{p.serviceDetail}}</span></li>
+                                            <li class="list-inline-item"><span
+                                                    class="text-muted">{{p.serviceDetail}}</span></li>
                                         </ul>
                                     </div>
-                                    <button class="object-btn btn btn-secondary col-3 col-md-2"><span class="hidden-xs-down">자세히</span>
+                                    <button class="object-btn btn btn-secondary col-3 col-md-2"><span
+                                            class="hidden-xs-down">자세히</span>
                                         보기</button>
                                 </div>
                                 <!-- Object - Horizontal -->
                             </div>
                         </div>
+
+
+
                     </div>
 
                     <!-- Pagination -->
                     <nav class="mt-4">
                         <ul class="pagination justify-content-end">
-                        <li class="page-item">
-                            <a class="page-link" href="#a" @click="curPagePrevious()" aria-label="Previous">
-                                <i class="ti-angle-left"></i>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-                        <li class="page-item" v-for="p in pages" :class="{'active' : curPage === p}"><a class="page-link" href="#a" @click="curPage = p">{{ p }}</a></li>
-                        <!--현재페이지 p -->
-                        <li class="page-item">
-                            <a class="page-link" href="#a" @click="curPageNext()" aria-label="Next">
-                                <i class="ti-angle-right"></i>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#a" @click="curPagePrevious()" aria-label="Previous">
+                                    <i class="ti-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item" v-for="p in pages" :class="{'active' : curPage === p}"><a
+                                    class="page-link" href="#a" @click="curPage = p">{{ p }}</a></li>
+                            <!--현재페이지 p -->
+                            <li class="page-item">
+                                <a class="page-link" href="#a" @click="curPageNext()" aria-label="Next">
+                                    <i class="ti-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
 
@@ -399,7 +408,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
 
-                            <!-- Card --> 
+                            <!-- Card -->
                             <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
                                 <img src="images/design/designImage01.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
@@ -413,7 +422,8 @@
                                 <img src="images/design/designImage02.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Logo & Brand Design</h5>
-                                    <p class="text-muted mb-0">고객의 비주얼 브랜드아이덴티티를 디자인하고, 가이드를 제공합니다. 제공한 가이드를 바탕으로 각종 인쇄 및 디자인 서비스에 반영하여, 브랜드를 관리합니다.</p>
+                                    <p class="text-muted mb-0">고객의 비주얼 브랜드아이덴티티를 디자인하고, 가이드를 제공합니다. 제공한 가이드를 바탕으로 각종 인쇄
+                                        및 디자인 서비스에 반영하여, 브랜드를 관리합니다.</p>
                                 </div>
                             </div>
 
@@ -433,7 +443,8 @@
                                 <img src="images/design/designImage04.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Web Contents Design</h5>
-                                    <p class="text-muted mb-0">웹/모바일 상세페이지, 썸네일, 웹페이지 UI 디자인 등 웹이나 파일에서 필요한 디자인을 제공합니다. 현재 웹 기획과 퍼블리싱, 개발은 서비스를 준비중입니다.</p>
+                                    <p class="text-muted mb-0">웹/모바일 상세페이지, 썸네일, 웹페이지 UI 디자인 등 웹이나 파일에서 필요한 디자인을 제공합니다.
+                                        현재 웹 기획과 퍼블리싱, 개발은 서비스를 준비중입니다.</p>
                                 </div>
                             </div>
 
@@ -536,8 +547,8 @@
                             </p>
                             <ul class="nav nav-icons text-center" role="tablist">
                                 <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge1" data-toggle="tab"
-                                        class="nav-link active"><i class="ti-loop"></i>대여서비스</a></li>
+                                    <a href="#bizconcierge1" data-toggle="tab" class="nav-link active"><i
+                                            class="ti-loop"></i>대여서비스</a></li>
                                 <br>
                                 <li class="nav-item m-2 mb-4">
                                     <a href="#bizconcierge2" data-toggle="tab" class="nav-link"><i
@@ -578,7 +589,7 @@
                                     <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
                                 </div>
                                 <div id="bizconcierge2" class="tab-pane" role="tabpanel">
-                                <p class="ml-4 mb-5">재단기와 문서세단기를 활용하여, 각종 보안서류를 빠르게 파쇄합니다.</p>
+                                    <p class="ml-4 mb-5">재단기와 문서세단기를 활용하여, 각종 보안서류를 빠르게 파쇄합니다.</p>
                                     <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
                                 </div>
                                 <div id="bizconcierge3" class="tab-pane" role="tabpanel">
@@ -818,7 +829,6 @@
 
     <!-- NAVER MAP USED -->
     <script>
-
         var HOME_PATH = window.HOME_PATH || '.';
 
         var whereWeare = new naver.maps.LatLng(37.514505, 126.899966),
@@ -832,18 +842,18 @@
             });
 
         var contentString = [
-                '<div class="container text-center">',
-                '   <br> <h3>네모연구소</h3>',
-                '   <p class="korean-font"> 에이스하이테크시티 1동 107호<br/>', 
-                '   </p>',
-                '</div>'
-            ].join('');
+            '<div class="container text-center">',
+            '   <br> <h3>네모연구소</h3>',
+            '   <p class="korean-font"> 에이스하이테크시티 1동 107호<br/>',
+            '   </p>',
+            '</div>'
+        ].join('');
 
         var infowindow = new naver.maps.InfoWindow({
             content: contentString
         });
 
-        naver.maps.Event.addListener(marker, "click", function(e) {
+        naver.maps.Event.addListener(marker, "click", function (e) {
             if (infowindow.getMap()) {
                 infowindow.close();
             } else {
@@ -852,7 +862,6 @@
         });
 
         // infowindow.open(map, marker);
-
     </script>
 
     <!-- Modal : 코드 상 나중에 입력한 것일 수록 위로 올라옵니다. -->
@@ -873,6 +882,391 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="sv_DocuPrint" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">문서 출력</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_ColorPrint" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">컬러 출력</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Bindings" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">고급 제본</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_BigPrint" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">대형 출력</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Brochure" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">브로슈어/리플렛</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Catalog" tabindex="-1" style="position:auto" dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">카타로그/도서</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="modal fade" id="sv_Poster" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">포스터</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Proposal" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">제안서/보고서</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Namecard" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">명함 인쇄</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Banners" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">현수막/배너</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Panels" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">포토월/폼보드패널</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Sheetcut" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">스티커/시트커팅</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Envelop" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">봉투/초대장</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Finishing" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">각종 후가공</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Packages" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">쇼핑백/패키지</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_NoteDiary" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">노트/바인더</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_PhotoFrame" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">사진/액자</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_Stamps" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">도장/스탬프</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_PromotionThing" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">판촉물/상패</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sv_etc" tabindex="-1" style="position:auto" dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">특수제작/영화소품</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Vue! make modals!-->
+    <!-- <div id="fivthAppfollow">
+        <div v-for="p in printingServices">
+            <div class="modal fade" :id="p.modalID" tabindex="-1" style="position:auto" dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">{{p.serviceName}}</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            {{p.serviceMoreDetail}}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" onclick="copyToClipboard('#nemomail'); alert('복사 되었습니다.');" data-dismiss="modal">이메일 문의(주소복사)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
 </body>
 
