@@ -240,7 +240,7 @@
                                     제안하고, 제작하고, 제공하고, 그려냅니다.</h5>
                             </p>
                             <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#thisModal">서비스 더보기</button>
+                                data-target="#moreServices">서비스 더보기</button>
                         </div>
                     </div>
                 </div>
@@ -409,7 +409,7 @@
                         <div class="col-lg-4 col-sm-6">
 
                             <!-- Card -->
-                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
+                            <div class="card" data-toggle="modal" data-target="#editorialDesign" style="cursor: pointer;">
                                 <img src="images/design/designImage01.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Editorial Design</h5>
@@ -418,7 +418,7 @@
                                 </div>
                             </div>
                             <!-- Card -->
-                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
+                            <div class="card" data-toggle="modal" data-target="#logoDesign" style="cursor: pointer;">
                                 <img src="images/design/designImage02.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Logo & Brand Design</h5>
@@ -430,7 +430,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <!-- Card -->
-                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
+                            <div class="card" data-toggle="modal" data-target="#infographicDesign" style="cursor: pointer;">
                                 <img src="images/design/designImage03.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Information Graphics</h5>
@@ -439,7 +439,7 @@
                                 </div>
                             </div>
                             <!-- Card -->
-                            <div class="card" data-toggle="modal" data-target="#thisModal" style="cursor: pointer;">
+                            <div class="card" data-toggle="modal" data-target="#webDesign" style="cursor: pointer;">
                                 <img src="images/design/designImage04.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Web Contents Design</h5>
@@ -864,8 +864,9 @@
         // infowindow.open(map, marker);
     </script>
 
-    <!-- Modal : 코드 상 나중에 입력한 것일 수록 위로 올라옵니다. -->
-    <div class="modal fade" id="thisModal" tabindex="-1" style="position:auto" dialog">
+    <div id="modals">
+        <!-- Modal : 코드 상 나중에 입력한 것일 수록 위로 올라옵니다. -->
+        <div class="modal fade" id="moreServices" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -882,7 +883,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_DocuPrint" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -900,7 +901,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_ColorPrint" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -918,7 +919,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Bindings" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -936,7 +937,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_BigPrint" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -954,7 +955,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Brochure" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -972,25 +973,25 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Catalog" tabindex="-1" style="position:auto" dialog">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">카타로그/도서</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
-                        </div>
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">카타로그/도서</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
                     </div>
                 </div>
             </div>
-    
+        </div>
+
         <div class="modal fade" id="sv_Poster" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1008,7 +1009,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Proposal" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1026,7 +1027,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Namecard" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1044,7 +1045,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Banners" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1062,7 +1063,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Panels" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1080,7 +1081,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Sheetcut" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1098,7 +1099,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Envelop" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1116,7 +1117,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Finishing" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1134,7 +1135,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Packages" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1152,7 +1153,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_NoteDiary" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1170,7 +1171,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_PhotoFrame" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1188,7 +1189,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_Stamps" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1206,7 +1207,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_PromotionThing" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1224,7 +1225,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="sv_etc" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1242,7 +1243,80 @@
                 </div>
             </div>
         </div>
-    
+
+        <div class="modal fade" id="editoralDesign" tabindex="-1" style="position:auto" dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">편집 디자인</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="logoDesign" tabindex="-1" style="position:auto" dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">로고 디자인</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="infographicDesign" tabindex="-1" style="position:auto" dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">인포그래픽 디자인</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="webDesign" tabindex="-1" style="position:auto" dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">웹 디자인</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!--Vue! make modals!-->
     <!-- <div id="fivthAppfollow">
@@ -1268,5 +1342,4 @@
     </div> -->
 
 </body>
-
 </html>
