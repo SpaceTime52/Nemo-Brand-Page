@@ -751,49 +751,29 @@
 
     <!-- JS Gallery -->
     <script>
-        var gallerySliderItems = [{
-                src: 'images/main-images/mainImage01.jpg',
-                w: 1920,
-                h: 1080
-            },
-            {
-                src: 'images/main-images/mainImage02.jpg',
-                w: 1920,
-                h: 1080
-            },
-            {
-                src: 'images/main-images/mainImage03.jpg',
-                w: 1920,
-                h: 1080
-            },
-            {
-                src: 'images/main-images/mainImage04.jpg',
-                w: 1920,
-                h: 1080
+        function copyToClipboard(element) {
+            let $temp = $("<input>");
+            $("body").append($temp);
+            if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+                let el = $temp.get(0);
+                let editable = el.contentEditable;
+                let readOnly = el.readOnly;
+                el.contentEditable = true;
+                el.readOnly = false;
+                let range = document.createRange();
+                range.selectNodeContents(el);
+                let sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(range);
+                el.setSelectionRange(0, 999999);
+                el.contentEditable = editable;
+                el.readOnly = readOnly;
+            } else {
+                $temp.val($(element).text()).select();
             }
-        ];
-
-        var galleryCarouselItems = [{
-                src: 'images/main-images/mainImage01.jpg',
-                w: 1100,
-                h: 750
-            },
-            {
-                src: 'images/main-images/mainImage02.jpg',
-                w: 1100,
-                h: 750
-            },
-            {
-                src: 'images/main-images/mainImage03.jpg',
-                w: 1100,
-                h: 750
-            },
-            {
-                src: 'images/main-images/mainImage04.jpg',
-                w: 1100,
-                h: 750
-            }
-        ];
+            document.execCommand("copy");
+            $temp.remove();
+        }
     </script>
 
     <!-- NAVER MAP USED -->
