@@ -635,11 +635,12 @@
                                 target="_blank">7866</a><br>
                             E-mail:
                             <a href="#contact" onclick="copyToClipboard('#nemomail')">
-                                <span id="nemomail">nemo@nemolab.co.kr</span><span class="text-muted"> - 주소복사</span>
+                                <span id="nemomail">nemo@nemolab.co.kr</span>
+                                <span class="text-muted"> - 주소복사</span>
                             </a><br>
                             디자인: <a href=tel:0226331306 target="_blank">02 2633 1306</a><br>
                             E-mail:
-                            <a href="#contact" onclick="copyToClipboard2('#designmail')">
+                            <a href="#contact" onclick="copyToClipboard('#designmail')">
                                 <span id="designmail">design@nemolab.co.kr</span>
                                 <span class="text-muted"> - 주소복사</span>
                             </a><br>
@@ -753,31 +754,6 @@
     <script>
 
         function copyToClipboard(element) {
-            let $temp = $("<input>");
-            $("body").append($temp);
-            if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-                let el = $temp.get(0);
-                let editable = el.contentEditable;
-                let readOnly = el.readOnly;
-                el.contentEditable = true;
-                el.readOnly = false;
-                let range = document.createRange();
-                range.selectNodeContents(el);
-                let sel = window.getSelection();
-                sel.removeAllRanges();
-                sel.addRange(range);
-                el.setSelectionRange(0, 999999);
-                el.contentEditable = editable;
-                el.readOnly = readOnly;
-            } else {
-                $temp.val($(element).text()).select();
-            }
-            document.execCommand("copy");
-            $temp.remove();
-            alert('복사 되었습니다.');
-        }
-
-        function copyToClipboard2(element) {
             let $temp = $("<input>");
             $("body").append($temp);
             if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
