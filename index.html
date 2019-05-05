@@ -634,12 +634,12 @@
                             제작: <a href=tel:0226780400 target="_blank">02 2678 0400</a> / <a href=tel:0226787866
                                 target="_blank">7866</a><br>
                             E-mail:
-                            <a href="#contact" onclick="copyToClipboard('#nemomail'); alert('복사 되었습니다.');">
+                            <a href="#contact" onclick="copyToClipboard2('#nemomail'); alert('복사 되었습니다.');">
                                 <span id="nemomail">nemo@nemolab.co.kr</span><span class="text-muted"> - 주소복사</span>
                             </a><br>
                             디자인: <a href=tel:0226331306 target="_blank">02 2633 1306</a><br>
                             E-mail:
-                            <a href="#contact" onclick="copyToClipboard('#designmail'); alert('복사 되었습니다.');">
+                            <a href="#contact" onclick="copyToClipboard2('#designmail'); alert('복사 되었습니다.');">
                                 <span id="designmail">design@nemolab.co.kr</span>
                                 <span class="text-muted"> - 주소복사</span>
                             </a><br>
@@ -751,7 +751,7 @@
 
     <!-- JS Gallery -->
     <script>
-        function copyToClipboard(element) {
+        function copyToClipboard2(element) {
             let $temp = $("<input>");
             $("body").append($temp);
             if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
