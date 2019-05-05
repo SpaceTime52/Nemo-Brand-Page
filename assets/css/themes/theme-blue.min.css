@@ -452,7 +452,7 @@ img {
 }
 
 .header-horizontal .h-fullheight {
-    height: calc(100vh - 60px)
+    height: calc(100vh)
 }
 
 @media only screen and (max-height: 500px) {
@@ -609,12 +609,18 @@ img {
     width: 100%;
     height: 60px;
     padding-left: 1.5rem;
-    background-color: #fff
+    background-color: transparent
+}
+
+@media only screen and (max-width: 991px) {
+    #header.header-horizontal{
+        visibility: hidden;
+    }
 }
 
 #header.header-horizontal.dark {
     color: #fff;
-    background-color: #202124
+    background-color: rgba(0, 0, 0, 0.25)
 }
 
 #header.header-horizontal .module {
@@ -669,7 +675,9 @@ img {
     }
 
     #header.header-horizontal .module-nav a {
-        line-height: 2rem
+        line-height: 3rem;
+        font-size: 1rem
+
     }
 
     #header.header-horizontal .module-nav .selector {
@@ -695,6 +703,7 @@ img {
     padding: 0 3rem 0 1rem;
     width: 260px
 }
+
 
 @media only screen and (max-width: 575px) {
     #header.header-horizontal .module-object {
@@ -823,7 +832,8 @@ img {
     background-color: #fff;
     width: 330px;
     height: 100vh;
-    overflow: auto
+    overflow: auto;
+    display: none
 }
 
 #header.header-vertical .header-vertical-container {
@@ -928,7 +938,7 @@ img {
 
 #header.header-vertical #nav-toggle {
     float: left;
-    display: none
+    visibility: hidden
 }
 
 @media only screen and (max-width: 991px) {
@@ -1002,7 +1012,7 @@ img {
     display: none
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 991px) {
     #navigation-mobile {
         display: block
     }
@@ -1010,7 +1020,7 @@ img {
 
 #navigation-mobile.dark {
     color: #fff;
-    background-color: #425CC7
+    background-color: rgba(0, 0, 0, 0.25)
 }
 
 #navigation-mobile.light {
@@ -1065,7 +1075,7 @@ img {
 }
 
 .header-horizontal #content {
-    padding-top: 60px
+    padding-top: 0px
 }
 
 .header-horizontal #content .section:first-child {

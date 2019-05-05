@@ -46,56 +46,53 @@
 
 </head>
 
-<body class="header-vertical dark-overlay">
+<body class="header-horizontal dark-overlay">
 
     <!-- Body Wrapper -->
     <div id="body-wrapper" class="animsition" data-animsition-overlay="true">
 
         <!-- Header -->
-        <header id="header" class="header-vertical dark">
+        <header id="header" class="header-horizontal dark">
 
-            <div class="header-vertical-container">
+            <div class="header-horizontal-container">
 
                 <!-- Module - Logo -->
-                <a href="index.html" class="module module-logo"><img src="images/nemo_newlogo.svg" width="80"
-                        alt=""></a>
+                <!-- <a href="index.html" class="module module-logo ml-4"><img src="images/nemo_newlogo.svg" width="40"
+                        alt=""></a> -->
 
                 <!-- Module - Navigation -->
-                <nav id="navigation-main" class="module module-nav">
-                    <ul class="nav nav-main-vertical">
+                <nav id="navigation-main" class="module module-nav float-right mr-4">
+                    <ul class="nav nav-main-horizontal ">
                         <li><a href="#home">Start</a></li>
                         <li><a href="#about">About NEMOLAB</a></li>
                         <li><a href="#printing">Printing Service</a></li>
                         <li><a href="#design">Design Service</a></li>
                         <li><a href="#contents">Publication</a></li>
-                        <li><a href="#concierge">Business Concierge</a></li>
+                        <!-- <li><a href="#concierge">Business Concierge</a></li> -->
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="selector"></div>
                 </nav>
 
                 <!-- Module - Objects -->
-                <div class="module module-object" data-toggle="panel-objects">
+                <!-- <div class="module module-object" data-toggle="panel-objects">
                     <img class="object-image" src="images/moreimage.jpg" width="50" alt="">
                     <span class="object-name">Nemolab Pages 더보기</span>
                     <span class="object-indicator"><i class="ti ti-menu"></i></span>
-                </div>
+                </div> -->
             </div>
 
         </header>
         <!-- Header / End -->
 
+
         <!-- Navigation Mobile : 상단메뉴 &토글 -->
         <nav id="navigation-mobile" class="dark">
 
-            <!-- Module - Logo -->
-            <a href="#" id="nav-toggle" class="module module-logo"><img src="images/nemo_newlogo_horizontal.svg"
+            <!-- Module - Logo = toggle-->
+            <a href="#" id="nav-toggle" class="module module-logo">
+                <img src="images/nemo_newlogo_horizontal.svg"
                     width="50" alt="" style="margin:18px 0px"></a>
-
-            <!-- Module - Navigation Toggle -->
-            <!-- <div class="module module-nav-toggle"> 
-            <a href="#" id="nav-toggle" class="nav-toggle"><span></span><span></span><span></span><span></span></a>
-        </div> -->
 
         </nav>
         <!-- Navigation Mobile / End -->
@@ -168,12 +165,12 @@
                 </div>
 
                 <!-- Gallery Toggle -->
-                <a href="#" class="fullscreen-toggle" data-items="gallerySliderItems" data-toggle="gallery">
+                <!-- <a href="#" class="fullscreen-toggle" data-items="gallerySliderItems" data-toggle="gallery">
                     <span class="arrow-tl"></span>
                     <span class="arrow-tr"></span>
                     <span class="arrow-br"></span>
                     <span class="arrow-bl"></span>
-                </a>
+                </a> -->
 
             </section>
 
@@ -249,8 +246,6 @@
 
             <!-- Section / Printing -->
             <section id="printing" class="section bg-light pt-0 pb-5">
-
-
                 <!-- 네모연구소 프린팅 설명 -->
                 <div class="objects-search bg-dark dark">
                     <div class="bg-image-holder bg-image-fixed zooming dimmed-img">
@@ -485,7 +480,7 @@
                                         <li>서점 판매수익금 전액 인세지급</li>
                                     </ul>
                                     <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em"
-                                        data-toggle="modal" data-target="#thisModal">더 알아보기</button>
+                                        data-toggle="modal" data-target="#contentsPub">더 알아보기</button>
                                 </div>
                             </div>
                             <div class="card mb-4 box-shadow">
@@ -501,7 +496,7 @@
                                         <li>서점 판매수익금 관리 대행</li>
                                     </ul>
                                     <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em"
-                                        data-toggle="modal" data-target="#thisModal">더 알아보기</button>
+                                        data-toggle="modal" data-target="#agencyPub">더 알아보기</button>
                                 </div>
                             </div>
                             <div class="card mb-4 box-shadow">
@@ -518,7 +513,7 @@
                                         <li>마케팅 및 컨텐츠 협력</li>
                                     </ul>
                                     <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em"
-                                        data-toggle="modal" data-target="#thisModal">더 알아보기</button>
+                                        data-toggle="modal" data-target="#brandPub">더 알아보기</button>
                                 </div>
                             </div>
                         </div>
@@ -669,27 +664,6 @@
 
         </div>
         <!-- Content / End -->
-
-        <!-- Footer -->
-        <!-- <footer id="footer" class="footer-fixed bg-dark dark">
-
-            <div class="container-custom">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left mb-5 mb-md-0">
-                        <a href="index.html"><img src="images/nemo_newlogo_horizontal.svg" width="30" alt=""></a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-right">
-                        <ul class="nav nav-footer mr-4">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#" target="_blank">서비스카타로그</a></li>
-                            <li><a href="#" target="_blank">브랜드가이드</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </footer> -->
-        <!-- Footer / End -->
 
         <!-- Body Overlay -->
         <div id="body-overlay"></div>
@@ -864,13 +838,14 @@
         // infowindow.open(map, marker);
     </script>
 
+
     <div id="modals">
         <!-- Modal : 코드 상 나중에 입력한 것일 수록 위로 올라옵니다. -->
         <div class="modal fade" id="moreServices" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title">NEMO TOTAL SERVICES</h3>
+                        <h3 class="modal-title">네모 서비스</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
@@ -893,10 +868,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        문서를 출력합니다. 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">이메일주소 복사</button>
                     </div>
                 </div>
             </div>
@@ -1244,7 +1219,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="editoralDesign" tabindex="-1" style="position:auto" dialog">
+        <div class="modal fade" id="editorialDesign" tabindex="-1" style="position:auto" dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1315,6 +1290,62 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="contentsPub" tabindex="-1" style="position:auto" dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">콘텐츠 출판 대행</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="modal fade" id="agencyPub" tabindex="-1" style="position:auto" dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">출판 업무 대행</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="modal fade" id="brandPub" tabindex="-1" style="position:auto" dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">브랜드 협력/제휴</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     </div>
 
