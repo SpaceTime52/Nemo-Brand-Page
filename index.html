@@ -1433,29 +1433,32 @@
             $("body").append($temp);
             console.log($(element));
             if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-                let el = $temp.get(0);
-                let editable = el.contentEditable;
-                let readOnly = el.readOnly;
-                el.contentEditable = true;
-                el.readOnly = false;
-                let range = document.createRange();
-                range.selectNodeContents(el);
-                let sel = window.getSelection();
-                sel.removeAllRanges();
-                sel.addRange(range);
-                el.setSelectionRange(0, 999999);
-                el.contentEditable = editable;
-                el.readOnly = readOnly;
+                alert('죄송합니다. PC에서만 Clipboard 복사가 가능합니다.');
+                // let el = $temp.get(0);
+                // let editable = el.contentEditable;
+                // let readOnly = el.readOnly;
+                // el.contentEditable = true;
+                // el.readOnly = false;
+                // let range = document.createRange();
+                // range.selectNodeContents(el);
+                // let sel = window.getSelection();
+                // sel.removeAllRanges();
+                // sel.addRange(range);
+                // el.setSelectionRange(0, 999999);
+                // el.contentEditable = editable;
+                // el.readOnly = readOnly;
+
             } else {
                 $temp.val($(element).text()).select();
                 console.log($temp.val($(element).text()).select());
                 console.log($temp.val($(element).text()));
                 console.log($(element).text());
                 console.log($(element));
+                alert('복사 되었습니다.');
             }
             document.execCommand("copy");
             $temp.remove();
-            alert('복사 되었습니다.');
+            
         }
     </script>
 
