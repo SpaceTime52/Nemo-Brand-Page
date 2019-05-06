@@ -82,13 +82,13 @@
                 <!-- Module - Navigation -->
                 <nav id="navigation-main" class="module module-nav float-right mr-4">
                     <ul class="nav nav-main-horizontal ">
-                        <li><a href="#home">Start</a></li>
-                        <li><a href="#about">About NEMOLAB</a></li>
-                        <li><a href="#printing">Printing Service</a></li>
-                        <li><a href="#design">Design Service</a></li>
-                        <li><a href="#contents">Publication</a></li>
+                        <li><a href="#home" style="font-family:'campton-bold-demo'">Start</a></li>
+                        <li><a href="#about" style="font-family:'campton-bold-demo'">About NEMOLAB</a></li>
+                        <li><a href="#printing" style="font-family:'campton-bold-demo'">Printing Service</a></li>
+                        <li><a href="#design" style="font-family:'campton-bold-demo'">Design Service</a></li>
+                        <li><a href="#contents" style="font-family:'campton-bold-demo'">Publication</a></li>
                         <!-- <li><a href="#concierge">Business Concierge</a></li> -->
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact" style="font-family:'campton-bold-demo'">Contact</a></li>
                     </ul>
                     <div class="selector"></div>
                 </nav>
@@ -221,8 +221,8 @@
 
                     <div class="row gutters-lg align-items-center">
                         <div class="col-lg-12 col-md-12 mb-5 mb-md-0 text-center">
-                            <h3>"beyond Printing"</h3>
-                            <h4 class="korean-font text-center">고객의 생각과 정보, 전하려는 가치를<br>더 효과적이고 효율적으로 전달하도록<br><br>
+                            <h3>beyond Printing</h3>
+                            <h4 class="korean-font text-center">고객의 생각과 정보, 전하려는 가치를<br>더 효과적이고 효율적으로 전달하도록.<br><br>
                             </h4>
                             <img src="images/what-we-do.png" style='width: 80%;max-width:500px'>
                             <!-- <br><br>
@@ -243,7 +243,7 @@
                         <div class="col-lg-6 col-md-6 pt-4" id="textedService" data-local-scroll>
                             <h2>Nemo is everywhere</h2>
                             <p>
-                                <h5>개인/기업은 네모난 무언가를 통해 세상을 경험하고</br>
+                                <h5>우리는 네모난 무언가를 통해 세상을 경험하고</br>
                                     또 네모를 통해 사람들에게 드러나기를 기대합니다.</h5>
                             </p>
                             <p>
@@ -268,15 +268,15 @@
                     <div class="container-custom">
                         <h1 class="mb-1">Printing Service</h1>
                         <p class="lead text-muted">
-                            <h3>30년 숙련도 + 젊은 감각</h3>
+                            <h4>30년 숙련도와 젊은 감각</h4>
                         </p>
                         <hr>
                         <div class="row align-items-end">
                             <div class="col-lg-8 form-group">
-                                <h3><strong>"네모한테 물어봅시다!"</strong></h3>
-                                <h5>어느 고객사의 팀 회의에서 자주 하는 말이라고 합니다.<br>네모연구소는 젊은 감각과 비즈니스 이해, 인쇄 숙련도를 모두 갖춘 프린팅 전문 기업으로,
+                                <h3><strong>네모한테 물어봅시다!</strong></h3>
+                                <h5 style="font-family: 'campton-light-demo'">어느 고객사의 팀 회의에서 자주 하는 말이라고 합니다.<br>네모연구소는 젊은 감각과 비즈니스 이해, 인쇄 숙련도를 모두 갖춘 프린팅 전문 기업으로,
                                     다양한 재질과 인쇄 방법, 예산에 따른 대안과 유연한 결제방식을 맞춤 제공하고 있습니다.</h5>
-                                <h5>특히 비즈니스에 특화된 커뮤니케이션과 더 효과적이고 가장 비용-효율적인 매개와 그 재질을 제안함으로써 고객사에 든든한 지원군이 되고 있습니다.</h5>
+                                <h5 style="font-family: 'campton-light-demo'">특히 비즈니스에 특화된 커뮤니케이션과 더 효과적이고 가장 비용-효율적인 매개와 그 재질을 제안함으로써 고객사에 든든한 지원군이 되고 있습니다.</h5>
                             </div>
                         </div>
                     </div>
@@ -310,7 +310,7 @@
                                             <img :src="'images/printing/'+p.imageNum" alt="">
                                         </div>
                                         <div class="object-content" data-toggle="modal" :data-target="'#'+p.modalID">
-                                            <h5 class="object-title">{{p.serviceName}}</h5>
+                                            <h4 class="object-title">{{p.serviceName}}</h4>
                                             <ul class="object-details list-unstyled">
                                                 <li><span class="text-muted">{{p.serviceDetail}}</span></li>
                                             </ul>
@@ -333,7 +333,7 @@
                                         <img :src="'images/printing/'+p.imageNum" alt="">
                                     </div>
                                     <div class="object-content col-5" data-toggle="modal" :data-target="'#'+p.modalID">
-                                        <h5 class="object-title">{{p.serviceName}}</h5>
+                                        <h4 class="object-title">{{p.serviceName}}</h4>
                                         <ul class="object-details list-inline">
                                             <li class="list-inline-item"><span
                                                     class="text-muted">{{p.serviceDetail}}</span></li>
@@ -383,9 +383,9 @@
                         <div class="col-lg-4">
                             <h1 class="mb-1">Design Service</h1>
                             <p class="lead text-muted">
-                                <h3>고급 디자인부터 인쇄까지<br>신속한 원스탑 비주얼 디자인</h3>
+                                <h4>고급 디자인부터 인쇄까지<br>신속한 원스탑 비주얼 디자인</h4>
                             </p>
-                            <p class="lead mb-5 h5">네모연구소의 디자인 서비스는 인쇄물 디자인은 물론 로고와 인포그래픽, 상세페이지 디자인 등 다양한 분야에서 인쇄와
+                            <p class="lead mb-5 h5" style="font-family: 'campton-light-demo'"> 네모연구소의 디자인 서비스는 인쇄물 디자인은 물론 로고와 인포그래픽, 상세페이지 디자인 등 다양한 분야에서 인쇄와
                                 고객비즈니스를 지원하고 있습니다.</p>
                             <!-- Feature #1 -->
                             <div class="feature feature-1">
@@ -423,7 +423,7 @@
                                 <img src="images/design/designImage01.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Editorial Design</h5>
-                                    <p class="text-muted mb-0">카타로그, 브로슈어, 도서, 포스터, 배너, 현수막 등 각종 인쇄제품을 디자인하고,
+                                    <p class="mb-0 mt-2"  style="font-family:nanumsquare">카타로그, 브로슈어, 도서, 포스터, 배너, 현수막 등 각종 인쇄제품을 디자인하고,
                                         제작 일정에 맞춰 빠른 결과물을 제공합니다. </p>
                                 </div>
                             </div>
@@ -432,7 +432,7 @@
                                 <img src="images/design/designImage02.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Logo & Brand Design</h5>
-                                    <p class="text-muted mb-0">고객의 비주얼 브랜드아이덴티티를 디자인하고, 가이드를 제공합니다. 제공한 가이드를 바탕으로 각종 인쇄
+                                    <p class="mb-0 mt-2"  style="font-family:nanumsquare">고객의 비주얼 브랜드아이덴티티를 디자인하고, 가이드를 제공합니다. 제공한 가이드를 바탕으로 각종 인쇄
                                         및 디자인 서비스에 반영하여, 브랜드를 관리합니다.</p>
                                 </div>
                             </div>
@@ -444,7 +444,7 @@
                                 <img src="images/design/designImage03.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Information Graphics</h5>
-                                    <p class="text-muted mb-0">정보의 전달효과를 극대화하기 위해 도표와 이미지, 차트 구성 외 레이아웃과 컬러/강조등의 다양한
+                                    <p class="mb-0 mt-2"  style="font-family:nanumsquare">정보의 전달효과를 극대화하기 위해 도표와 이미지, 차트 구성 외 레이아웃과 컬러/강조등의 다양한
                                         방법으로 개선/반영하여 제공합니다.</p>
                                 </div>
                             </div>
@@ -453,7 +453,7 @@
                                 <img src="images/design/designImage04.jpg" alt="" class="card-image">
                                 <div class="card-block" style="font-family:nanumsquare">
                                     <h5 class="mb-0">Web Contents Design</h5>
-                                    <p class="text-muted mb-0">웹/모바일 상세페이지, 썸네일, 웹페이지 UI 디자인 등 웹이나 파일에서 필요한 디자인을 제공합니다.
+                                    <p class="mb-0 mt-2"  style="font-family:nanumsquare">웹/모바일 상세페이지, 썸네일, 웹페이지 UI 디자인 등 웹이나 파일에서 필요한 디자인을 제공합니다.
                                         현재 웹 기획과 퍼블리싱, 개발은 서비스를 준비중입니다.</p>
                                 </div>
                             </div>
@@ -488,13 +488,13 @@
                                     </h4>
                                 </div>
                                 <div class="card-body">
-                                    <h6 style="font-size:calc(13px+1.0vw)"><strong>출판의 전과정을 선택적으로 서비스합니다.</strong></h6>
+                                    <h6 style="font-size:calc(13px+1.0vw)"><strong>출판의 전 과정을 선택적으로 서비스합니다.</strong></h6>
                                     <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
-                                        <li>출판브랜드: NEMO</li>
-                                        <li>마케팅 및 유통 수수료 별도</li>
-                                        <li>서점 판매수익금 전액 인세지급</li>
+                                        <li style="font-family: 'campton-light-demo'">출판브랜드: NEMO</li>
+                                        <li style="font-family: 'campton-light-demo'">마케팅 및 유통 수수료 별도</li>
+                                        <li style="font-family: 'campton-light-demo'">서점 판매수익금 전액 인세지급</li>
                                     </ul>
-                                    <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em"
+                                    <button type="button" class="btn btn-primary" style="font-size:1.1em"
                                         data-toggle="modal" data-target="#contentsPub">더 알아보기</button>
                                 </div>
                             </div>
@@ -503,14 +503,14 @@
                                     <h4 class="my-0 font-weight-normal" style="font-family:'noto sans kr'">출판 업무 대행</h4>
                                 </div>
                                 <div class="card-body">
-                                    <h6 style="font-size:calc(13px+1.0vw)"><strong>출판사/브랜드의 출판업무를 선택적으로 대행합니다.</strong>
+                                    <h6 style="font-size:calc(13px+1.0vw)"><strong>출판사와 브랜드의 출판업무를 선택적으로 대행합니다.</strong>
                                     </h6>
                                     <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
-                                        <li>출판브랜드: 고객사 브랜드</li>
-                                        <li>마케팅 및 유통 수수료 청구</li>
-                                        <li>서점 판매수익금 관리 대행</li>
+                                        <li style="font-family: 'campton-light-demo'">출판브랜드: 고객사 브랜드</li>
+                                        <li style="font-family: 'campton-light-demo'">마케팅 및 유통 수수료 청구</li>
+                                        <li style="font-family: 'campton-light-demo'">서점 판매수익금 관리 대행</li>
                                     </ul>
-                                    <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em"
+                                    <button type="button" class="btn btn-primary" style="font-size:1.1em"
                                         data-toggle="modal" data-target="#agencyPub">더 알아보기</button>
                                 </div>
                             </div>
@@ -523,11 +523,11 @@
                                     <h6 style="font-size:calc(13px+1.0vw)"><strong>협력 출판브랜드를 런칭하여, 책을 함께 출판합니다.</strong>
                                     </h6>
                                     <ul class="list-unstyled mt-3 mb-4" style="font-size:calc(11px+0.7vw)">
-                                        <li>출판브랜드: NEMO</li>
-                                        <li>콘텐츠 제공에 대한 인세 지급</li>
-                                        <li>마케팅 및 컨텐츠 협력</li>
+                                        <li style="font-family: 'campton-light-demo'">출판브랜드: NEMO</li>
+                                        <li style="font-family: 'campton-light-demo'">콘텐츠 제공에 대한 인세 지급</li>
+                                        <li style="font-family: 'campton-light-demo'">마케팅 및 컨텐츠 협력</li>
                                     </ul>
-                                    <button type="button" class="btn btn btn-block btn-primary" style="font-size:1.1em"
+                                    <button type="button" class="btn btn-primary" style="font-size:1.1em"
                                         data-toggle="modal" data-target="#brandPub">더 알아보기</button>
                                 </div>
                             </div>
@@ -843,14 +843,16 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title">네모 서비스</h3>
+                        <h3 class="modal-title" style="font-family:'campton-bold-demo'">NEMOLAB SERVICES</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        (내용을 준비 중입니다. )
+                    <div class="modal-body h5  style="font-family:'campton-light-demo'"h5" style="font-family:'campton-light-demo'">
+                        네모연구소는 네모난 인쇄물과 도서, 모니터 위에 펼쳐진 콘텐츠 준비를 A부터 Z까지 도와드리고 있습니다. 
+
+
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer h4">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
                     </div>
                 </div>
@@ -865,7 +867,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )
                     </div>
                     <div class="modal-footer">
@@ -883,7 +885,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -900,7 +902,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -917,7 +919,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -934,7 +936,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -951,7 +953,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -968,7 +970,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -985,7 +987,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1002,7 +1004,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1019,7 +1021,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1036,7 +1038,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1053,7 +1055,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1070,7 +1072,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1087,7 +1089,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1104,7 +1106,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1121,7 +1123,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1138,7 +1140,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1155,7 +1157,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1172,7 +1174,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1189,7 +1191,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1206,7 +1208,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1223,7 +1225,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1240,7 +1242,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1257,7 +1259,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body h5" style="font-family:'campton-light-demo'">
                         (내용을 준비 중입니다. )                 </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">확인했어요!</button>
@@ -1274,7 +1276,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body h5" style="font-family:'campton-light-demo'">
             (내용을 준비 중입니다. )
                         </div>
                         <div class="modal-footer">
@@ -1293,7 +1295,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body h5" style="font-family:'campton-light-demo'">
             (내용을 준비 중입니다. )
                         </div>
                         <div class="modal-footer">
@@ -1312,7 +1314,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body h5" style="font-family:'campton-light-demo'">
             (내용을 준비 중입니다. )
                         </div>
                         <div class="modal-footer">
