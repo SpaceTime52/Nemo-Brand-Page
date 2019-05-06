@@ -14,5 +14,34 @@
 #                                                                              #
 ################################################################################
 
-User-agent: *
-Allow: /
+# https://www.haosou.com
+User-agent: 360Spider
+User-agent: 360Spider-Image
+User-agent: 360Spider-Video
+User-agent: HaosouSpider
+
+# https://Bing.com
+User-agent: bingbot
+
+# http://www.daum.net
+User-agent: Daum
+
+# https://Google.com
+User-agent: Googlebot
+User-agent: Googlebot-Mobile
+User-agent: Mediapartners-Google
+
+# https://Naver.com
+User-agent: AdsBot-Naver
+User-agent: cowbot
+User-agent: Naverbot
+User-agent: Yeti
+
+# https://zum.com
+User-agent: ZumBot
+
+Disallow:
+Sitemap:  http://www.nemolab.co.kr/sitemap.xml
+
+User-agent:*
+Disallow: /
