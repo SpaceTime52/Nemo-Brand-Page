@@ -5,6 +5,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121361143-4"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -671,23 +672,34 @@
                         <hr class="hr-primary">
                         <address class="korean-font">
                             <span class="lead">주식회사 네모연구소</span><br>
-                            서울특별시 영등포구 경인로 775,<br>
-                            에이스하이테크시티 1동 107호<br>
+                            서울특별시 영등포구 경인로 775,<br>에이스하이테크시티 1동 107호<br>
                         </address>
                         <p class="korean-font">
                             대표 전화: <a href=tel:0226331308 target="_blank">02 2633 1308</a><br>
+                            <br>
                             제작: <a href=tel:0226780400 target="_blank">02 2678 0400</a> / <a href=tel:0226787866
                                 target="_blank">7866</a><br>
                             E-mail:
                             <a href="#contact" onclick="copyToClipboard('#nemomail')">
                                 nemo@nemolab.co.kr<span class="text-muted"> - 주소복사</span>
-                            </a><br>
+                            </a><br><br>
                             디자인: <a href=tel:0226331306 target="_blank">02 2633 1306</a><br>
                             E-mail:
                             <a href="#contact" onclick="copyToClipboard('#designmail')">
                                 design@nemolab.co.kr<span class="text-muted"> - 주소복사</span>
                             </a><br>
+                            디자인팀 카카오톡:
+                            <a href="https://nemolab.us12.list-manage.com/track/click?u=4966fb320b36eb4fd627204cc&id=c89daf6df8&e=c6b199bb11" target="_blank">
+                                모바일전용 링크</a><br><span class="text-muted"> - PC접속시 카카오ID: nemodesign01</span>
+                            <br>
+                            <br>
+                            <a href="javascript:void plusFriendChat()">
+                                <img src="https://developers.kakao.com/assets/img/about/logos/plusfriend/consult_small_yellow_pc.png"/>
+                            </a><br>
+                            <span class="pl-2 text-muted">카카오톡으로 문의 주실경우 1시간 이내에 답변 드리겠습니다. <br> 각 팀의 이메일로 문의 주시면 더 빠르고 자세한 상담이 가능합니다. </span>
                         </p>
+
+                        
                         <!-- <a href="#" class="icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="icon icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
                         <a href="#" class="icon icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
@@ -700,6 +712,10 @@
                 </div>
 
             </section>
+
+            <!-- <br>
+            사업자등록번호: 423-81-00239
+            계좌번호: 우리은행 1005-702-905666 또는 기업은행 034-093333-01-015 (주)네모연구소 -->
 
         </div>
         <!-- Content / End -->
@@ -826,6 +842,18 @@
         });
 
         // infowindow.open(map, marker);
+    </script>
+    <!-- Kakao plus친구 USED -->
+    <script type='text/javascript'>
+        //<![CDATA[
+        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('578188f53d7373dc8f2535524a90e642');
+        function plusFriendChat() {
+            Kakao.PlusFriend.chat({
+            plusFriendId: '_zxaExbM' // 플러스친구 홈 URL에 명시된 id로 설정합니다.
+            });
+        }
+        //]]>
     </script>
 
     <div id="modals">
