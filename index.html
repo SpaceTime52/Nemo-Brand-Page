@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121361143-4"></script>
-    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -17,40 +14,38 @@
         gtag('config', 'UA-121361143-4');
     </script>
 
-    <!-- Meta -->
-    <meta name="naver-site-verification" content="67abe8dddefe08f82814e5c0714b4d1df4a1fefa" />
+    <!-- kakao plusFriend -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- NAVER MAPs -->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=06ase7e57b">
+    </script>
+
+    <!-- Meta tags -->
+    <meta name="naver-site-verification" content="67abe8dddefe08f82814e5c0714b4d1df4a1fefa" /> <!--네이버 키-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="인쇄, 출판, 디자인 서비스를 제공하는 주식회사 네모연구소의 홈페이지 입니다. 네모연구소 NEMOLAB의 다양한 서비스 정보를 제공합니다." />
-    <link rel="canonical" href="http://www.nemolab.co.kr">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="NEMOLAB Co., Ltd. (주식회사 네모연구소)" />
     <meta property="og:description"
         content="인쇄, 출판, 디자인 서비스를 제공하는 주식회사 네모연구소의 홈페이지 입니다. 네모연구소 NEMOLAB의 다양한 서비스 정보를 제공합니다." />
     <meta property="og:image" content="images/main-images/mainImage02.jpg" />
     <meta property="og:url" content="http://www.nemolab.co.kr" />
-
-
-
+    <link rel="canonical" href="http://www.nemolab.co.kr">
 
     <!-- Title -->
     <title>NEMOLAB Co., Ltd. (주식회사 네모연구소)</title>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-
-    <!-- NAVER MAPs -->
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=06ase7e57b">
-    </script>
-
-    <!-- CSS Plugins -->
+    <!-- CSS Plugins 부트스트랩,기타 플러그인-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/plugins/slick-carousel/slick/slick.css" />
@@ -58,6 +53,8 @@
     <link rel="stylesheet" href="assets/plugins/animsition/dist/css/animsition.min.css" />
     <link rel="stylesheet" href="assets/plugins/photoswipe/dist/photoswipe.css" />
     <link rel="stylesheet" href="assets/plugins/photoswipe/dist/default-skin/default-skin.css" />
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 
@@ -65,11 +62,11 @@
     <link rel="stylesheet" href="assets/css/themify-icons.css" />
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" />
 
-    <!-- CSS Theme -->
-    <link id="theme" rel="stylesheet" href="assets/css/themes/theme-blue.min.css" />
-
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+    <!-- CSS Theme _ 가장 상위 Cover-->
+    <link id="theme" rel="stylesheet" href="assets/css/theme-blue.min.css"/>
 
 </head>
 
@@ -86,26 +83,24 @@
             <div class="header-horizontal-container">
 
                 <!-- Module - Logo -->
-                <a href="index.html" class="module module-logo ml-4"><img src="images/nemo_newlogo_vertical.png"
-                        width="110vh" alt=""></a>
+                <a href="index.html" class="module module-logo ml-4"><img src="images/logos/nemo_newlogo_vertical.png" width="110vh" alt=""></a>
 
                 <!-- Module - Navigation -->
                 <nav id="navigation-main" class="module module-nav float-right mr-4">
-                    <ul class="nav nav-main-horizontal ">
-                        <li><a href="#home" style="font-family:'campton-bold-demo'">Start</a></li>
-                        <li><a href="#about" style="font-family:'campton-bold-demo'">About NEMOLAB</a></li>
-                        <li><a href="#printing" style="font-family:'campton-bold-demo'">Printing Service</a></li>
-                        <li><a href="#design" style="font-family:'campton-bold-demo'">Design Service</a></li>
-                        <li><a href="#contents" style="font-family:'campton-bold-demo'">Publication</a></li>
-                        <!-- <li><a href="#concierge">Business Concierge</a></li> -->
-                        <li><a href="#contact" style="font-family:'campton-bold-demo'">Contact</a></li>
+                    <ul class="nav nav-main-horizontal " style="font-family:'campton-bold-demo'">
+                        <li><a href="#home">Start</a></li>
+                        <li><a href="#about">About NEMOLAB</a></li>
+                        <li><a href="#printing">Printing Service</a></li>
+                        <li><a href="#design">Design Service</a></li>
+                        <li><a href="#contents">Publication</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="selector"></div>
                 </nav>
 
                 <!-- Module - Objects -->
                 <!-- <div class="module module-object" data-toggle="panel-objects">
-                    <img class="object-image" src="images/moreimage.jpg" width="50" alt="">
+                    <img class="object-image" src="images/otherpages/moreimage.jpg" width="50" alt="">
                     <span class="object-name">Nemolab Pages 더보기</span>
                     <span class="object-indicator"><i class="ti ti-menu"></i></span>
                 </div> -->
@@ -114,10 +109,10 @@
         <!-- Header / End -->
 
         <!-- Navigation Mobile : 상단메뉴 &토글 -->
-        <nav id="navigation-mobile" class="dark">
+        <nav id="navigation-mobile" class="dark" >
             <!-- Module - Logo = toggle-->
             <a href="#" id="nav-toggle" class="module module-logo">
-                <img src="images/nemo_newlogo_horizontal.svg" width="50" alt="" style="margin:18px 0px"></a>
+                <img src="images/logos/nemo_newlogo_horizontal.svg" width="50" alt="" style="margin:18px 0px"></a>
         </nav>
         <!-- Navigation Mobile / End -->
 
@@ -181,7 +176,7 @@
                 </div>
 
                 <!-- Slider Navigation -->
-                <div class="slider-main-nav">
+                <div class="slider-main-nav" style="position: absolute; left: -30000px;">
                     <div class="slide"><img src="images/main-images/mainImage01_thnl.jpg" alt=""></div>
                     <div class="slide"><img src="images/main-images/mainImage02_thnl.jpg" alt=""></div>
                     <div class="slide"><img src="images/main-images/mainImage03_thnl.jpg" alt=""></div>
@@ -217,7 +212,7 @@
                 <div class="container-custom">
                     <div class="row gutters-lg align-items-center">
                         <div class="col-lg-6 col-md-6 mb-5 mb-md-0 text-center">
-                            <img src="images/nemo-icons.gif" style="width:60%" alt="">
+                            <img src="images/about/nemo-icons.gif" style="width:60%" alt="">
                         </div>
                         <div class="col-lg-6 col-md-6 pt-4" id="textedService" data-local-scroll>
                             <h2>Nemo is everywhere</h2>
@@ -255,7 +250,7 @@
                             <h3>beyond Printing</h3>
                             <h4 class="korean-font text-center">고객의 생각과 정보, 전하려는 가치를<br>더 효과적이고 효율적으로 전달하도록.<br><br>
                             </h4>
-                            <img src="images/what-we-do.png" style='width: 80%;max-width:500px'>
+                            <img src="images/about/what-we-do.png" style='width: 80%;max-width:500px'>
                             <!-- <br><br>
                                 <p>
                                     <h4>인쇄, 출력, 디자인 서비스를 중심으로<br>
@@ -563,106 +558,6 @@
 
             </section>
 
-            <!-- Section / Concierge (보류)-->
-            <!-- <section id="concierge" class="section"> -->
-
-            <!-- <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <figure class="media-box">
-                                <div class="image"><img src="assets/img/photos/about02.jpg" alt=""></div>
-                                <button class="btn-play animated" data-animation="fadeInUp" data-toggle="video-modal"
-                                    data-target="#modalVideo"
-                                    data-video="https://www.youtube.com/embed/uVju5--RqtY"></button>
-                            </figure>
-                        </div>
-                        <div class="col-lg-5 push-lg-1 col-md-6">
-                            <h1 class="mb-1">Business Concierge</h1>
-                            <p class="lead text-muted">
-                                <h3>비즈니스 종합 대행/대여/관리</h3>
-                            </p>
-                            <ul class="nav nav-icons text-center" role="tablist">
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge1" data-toggle="tab" class="nav-link active"><i
-                                            class="ti-loop"></i>대여서비스</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge2" data-toggle="tab" class="nav-link"><i
-                                            class="ti-cut"></i>고속문서세단</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge3" data-toggle="tab" class="nav-link"><i
-                                            class="ti-save"></i>스캔/팩스</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge4" data-toggle="tab" class="nav-link"><i
-                                            class="ti-package"></i>포장/발송대행</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge5" data-toggle="tab" class="nav-link"><i
-                                            class="ti-truck"></i>우편서비스</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge6" data-toggle="tab" class="nav-link"><i
-                                            class="ti-desktop"></i>웹기획/개발서비스</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge7" data-toggle="tab" class="nav-link"><i
-                                            class="ti-control-play"></i>영상기획/편집</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge8" data-toggle="tab" class="nav-link"><i
-                                            class="ti-wand"></i>크롤러개발/리서치</a></li>
-                                <br>
-                                <li class="nav-item m-2 mb-4">
-                                    <a href="#bizconcierge9" data-toggle="tab" class="nav-link"><i
-                                            class="ti-rocket"></i>3D프린팅서비스</a></li>
-                                <br>
-                            </ul>
-                            <div class="tab-content" data-local-scroll>
-                                <div id="bizconcierge1" class="tab-pane fade show active" role="tabpanel">
-                                    <p class="ml-4 mb-5">노트북, 빔프로젝터, 캠코더 등 필요한 물품을 일정기간 대여합니다.(준비중)</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge2" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">재단기와 문서세단기를 활용하여, 각종 보안서류를 빠르게 파쇄합니다.</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge3" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">종이문서를 스캔하여 디지털파일로 만들고, 팩스또는 이메일로 전송합니다.</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge4" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">퀵 또는 택배를 대신 말끔히 포장하여 발송하는 서비스 입니다.(소량/대량)</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge5" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">우편물을 대신 수령합니다. (택배 오전수령 서비스 준비중)</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge6" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">웹기획 및 개발 서비스를 준비중입니다.</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge7" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">영상 기획 및 편집 서비스를 준비중입니다.</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge8" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">웹 크롤러를 개발하여 데이터를 쉽게 획듣하는 서비스를 준비중입니다.</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                                <div id="bizconcierge9" class="tab-pane" role="tabpanel">
-                                    <p class="ml-4 mb-5">3D프린팅 서비스를 준비중입니다.</p>
-                                    <a href="#contact" class="btn btn-primary ml-4 mb-4">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-            <!-- </section> -->
-
             <!-- Section / Contact -->
             <section id="contact" class="section section-double bg-light">
 
@@ -725,7 +620,7 @@
 
     </div>
 
-    <!-- Panel - Objects -->
+    <!-- Panel - 페이지 더 보기 -->
     <nav id="panel-objects">
 
         <div class="panel-objects-container container dark">
@@ -737,7 +632,7 @@
                     <!-- Panel Objects Item -->
                     <div class="panel-objects-item">
                         <a href="http://design.nemolab.co.kr" class="panel-objects-item-image"><img
-                                src="images/nemopages/nemopages-25.jpg" alt=""></a>
+                                src="images/otherpages/nemopages-25.jpg" alt=""></a>
                         <div class="panel-objects-item-content">
                             <a href="index.html" class="link-reset">
                                 <h5 class="mb-0">Design Portfolio</h5>
@@ -753,7 +648,7 @@
                     <!-- Panel Objects Item -->
                     <div class="panel-objects-item">
                         <a href="index.html" class="panel-objects-item-image"><img
-                                src="images/nemopages/nemopages-26.jpg" alt=""></a>
+                                src="images/otherpages/nemopages-26.jpg" alt=""></a>
                         <div class="panel-objects-item-content">
                             <a href="http://balance.nemolab.co.kr" class="link-reset">
                                 <h5 class="mb-0">적립금 현황 공유 페이지</h5>
@@ -769,7 +664,7 @@
                     <!-- Panel Objects Item -->
                     <div class="panel-objects-item">
                         <a href="http://recruit.nemolab.co.kr" class="panel-objects-item-image"><img
-                                src="images/nemopages/nemopages-27.jpg" alt=""></a>
+                                src="images/otherpages/nemopages-27.jpg" alt=""></a>
                         <div class="panel-objects-item-content">
                             <a href="index.html" class="link-reset">
                                 <h5 class="mb-0">인재 채용</h5>
@@ -804,9 +699,11 @@
     <script src="assets/plugins/photoswipe/dist/photoswipe.min.js"></script>
     <script src="assets/plugins/photoswipe/dist/photoswipe-ui-default.min.js"></script>
     <script src="assets/plugins/twitter-fetcher/js/twitterFetcher_min.js"></script>
-    <script src="vue.js"></script>
+    <script src="vuejs/vue.js"></script>
+
     <!-- JS Core -->
     <script src="assets/js/core.min.js"></script>
+
     <!-- NAVER MAP USED -->
     <script>
         var HOME_PATH = window.HOME_PATH || '.';
@@ -843,6 +740,7 @@
 
         // infowindow.open(map, marker);
     </script>
+
     <!-- Kakao plus친구 USED -->
     <script type='text/javascript'>
         //<![CDATA[
@@ -1458,7 +1356,7 @@
 
     </div>
 
-    <!-- JS Copy -->
+    <!-- JS Email Copy -->
     <script>
         function copyToClipboard(element) {
             let $temp = $("<input>");
@@ -1490,10 +1388,8 @@
             }
             document.execCommand("copy");
             $temp.remove();
-            
         }
     </script>
 
 </body>
-
 </html>

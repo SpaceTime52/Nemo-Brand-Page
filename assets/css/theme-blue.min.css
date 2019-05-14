@@ -3,20 +3,23 @@
 
 @font-face {
     font-family: 'campton-bold-demo';
-    src: url('fonts/campton-bolddemo-webfont.woff2') format('woff2'),
-         url('fonts/campton-bolddemo-webfont.woff') format('woff');
+    src: url('/assets/fonts/campton-bolddemo-webfont.woff2') format('woff2'),
+         url('/assets/fonts/campton-bolddemo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'campton-light-demo';
-    src: url('fonts/campton-lightdemo-webfont.woff2') format('woff2'),
-         url('fonts/campton-lightdemo-webfont.woff') format('woff');
+    src: url('/assets/fonts/campton-lightdemo-webfont.woff2') format('woff2'),
+         url('/assets/fonts/campton-lightdemo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+
+.korean-font{
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 html {
@@ -170,8 +173,8 @@ img {
 
 @media only screen and (max-width: 1500px) {
     .container-custom {
-        margin-left: 4vw;
-        margin-right: 4vw
+        margin-left: 6vw;
+        margin-right: 6vw
     }
 }
 
@@ -626,7 +629,8 @@ img {
 #header.header-horizontal {
     width: 100%;
     height: 60px;
-    padding-left: 1.5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
     background-color: transparent
 }
 
@@ -654,7 +658,7 @@ img {
 #header.header-horizontal .module-nav .selector {
     position: absolute;
     bottom: 0;
-    height: 3px;
+    height: 7px;
     background-color: #3D64CC;
     -webkit-transition: all .25s ease-out;
     -moz-transition: all .25s ease-out;
@@ -2418,8 +2422,10 @@ pre {
 section,
 .section {
     position: relative;
-    padding-top: 7rem;
-    padding-bottom: 7rem
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 7vw;
+    padding-right: 7vw
 }
 
 section.cover,
@@ -2942,11 +2948,15 @@ section.protrude,
 }
 
 .bg-light {
-    background-color: #f5f7f7
+    background-color: #f5f7f7;
+    padding-left: 0vw;
+    padding-right: 0vw;
 }
 
 .bg-black {
-    background-color: #000
+    background-color: #000;
+    padding-left: 0vw;
+    padding-right: 0vw;
 }
 
 .bg-primary {
@@ -2974,7 +2984,9 @@ section.protrude,
 }
 
 .bg-dark {
-    background-color: #425CC7 !important
+    background-color: #425CC7 !important;
+    padding-left: 0vw;
+    padding-right: 0vw;
 }
 
 .bg-primary-tint {
@@ -3731,7 +3743,9 @@ section.protrude,
         margin-right: 0px;
         margin-left: 0px;
 	    table-layout: fixed;
-	    border-spacing: 1.25rem 0;
+        border-spacing: 1.25rem 0;
+        padding-right: 10vw;
+        padding-left: 10vw
 	}
 	.card-deck .card {
 	    display: block;
