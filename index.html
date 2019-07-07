@@ -591,10 +591,10 @@
                                 모바일전용 링크</a><br><span class="text-muted"> - PC접속시 카카오ID: nemodesign01</span>
                             <br>
                             <br>
-                            <a href="javascript:void plusFriendChat()" target="_blank">
+                            <!-- <a href="javascript:void plusFriendChat()" target="_blank">
                                 <img src="https://developers.kakao.com/assets/img/about/logos/plusfriend/consult_small_yellow_pc.png"/>
                             </a><br>
-                            <span class="pl-2 text-muted">카카오톡으로 문의 주실경우 1시간 이내에 답변 드리겠습니다.<br> 각 팀의 이메일로 문의 주시면 더 빠르고 자세한 상담이 가능합니다. </span>
+                            <span class="pl-2 text-muted">카카오톡으로 문의 주실경우 1시간 이내에 답변 드리겠습니다.<br> 각 팀의 이메일로 문의 주시면 더 빠르고 자세한 상담이 가능합니다. </span> -->
                         </p>
 
                         
@@ -756,6 +756,50 @@
         }
         //]]>
     </script>
+
+    <!-- Channel Plugin Scripts -->
+    <script>
+    ;window.channelPluginSettings = {
+      "pluginKey": "55e5f8d4-33a6-44b1-93fe-62daeb9245d0"
+    };
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+      }
+      var d = window.document;
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    </script>
+    <!-- End Channel Plugin -->
 
     <div id="modals">
         <!-- Modal : 코드 상 나중에 입력한 것일 수록 위로 올라옵니다. -->
